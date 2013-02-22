@@ -1,0 +1,14 @@
+alias sf='php app/console'
+alias cacl='sf cache:clear'
+alias gs='git status'
+alias gc='git commit'
+alias gps='git push'
+alias gpu='git pull'
+alias gck='git checkout'
+alias gcl='git clone'
+alias log="git log --graph --pretty=format:'%Cred%h %Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+alias ..="cd .."
+alias .="cd ."

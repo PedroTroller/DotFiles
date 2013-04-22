@@ -120,5 +120,5 @@ for f in $(command ls ~/.node-completion); do
 done
 # }}}
 
-source ~/dot-files/gitPromp
-source ~/dot-files/aliases
+source ~/DotFiles/gitPromp
+source ~/DotFiles/aliases

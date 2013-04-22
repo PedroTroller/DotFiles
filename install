@@ -1,4 +1,6 @@
 #!/usr/bin/env sh
 
-sh ~/dot-files/symlink
+sh ~/DotFiles/symlink
 #sh ~/dot-files/puppet
+
+source ~/.bashrc

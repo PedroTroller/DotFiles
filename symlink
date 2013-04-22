@@ -1,4 +1,6 @@
-#!/usr/bin/env sh
-
-rm -rf ~/.bashrc
-ln -s ~/dot-files/Symlink/bashrc ~/.bashrc
+#!/usr/bin
+for file in `ls -1 ~/DotFiles/Symlink`; do 
+    echo Symlink for "$file"
+    rm -rf ~/.$file
+    ln -s  ~/DotFiles/Symlink/$file ~/.$file
+done

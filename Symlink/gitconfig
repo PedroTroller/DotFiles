@@ -4,3 +4,5 @@
 	ui = true
 [user]
 	email = plazanet.pierre@gmail.com
+[push]
+	default = current

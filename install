@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/bash
 
 sh ~/DotFiles/symlink
 sh ~/DotFiles/Apt/install

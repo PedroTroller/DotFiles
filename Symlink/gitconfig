@@ -1,0 +1,6 @@
+[core]
+	excludesfile = /home/pedro/.gitignore
+[color]
+	ui = true
+[user]
+	email = plazanet.pierre@gmail.com

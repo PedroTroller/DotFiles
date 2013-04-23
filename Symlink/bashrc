@@ -85,11 +85,6 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-# some more ls aliases
-
-
-# Add an "alert" alias for long running commands.  Use like so:
-#   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
 # Alias definitions.
@@ -99,6 +94,15 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
+else
+    alert No .bash_aliases file
+fi
+
+# Prompt  script.
+if [ -f ~/.bash_prompt ]; then
+    source ~/.bash_prompt
+else
+    alert No .bash_prompt file
 fi
 
 # enable programmable completion features (you don't need to enable
@@ -121,11 +125,4 @@ for f in $(command ls ~/.node-completion); do
 done
 # }}}
 
-source ~/DotFiles/gitPromp >> /dev/null
-source ~/DotFiles/aliases >> /dev/null
-
 fc-cache -vf ~/.fonts >> /dev/null
-
-git config --global core.excludesfile ~/.gitignore
-git config --global plazanet.pierre@gmail.com
-git config --global color.ui true

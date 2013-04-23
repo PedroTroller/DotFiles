@@ -6,3 +6,5 @@
 	email = plazanet.pierre@gmail.com
 [push]
 	default = current
+[pull]
+	default = current

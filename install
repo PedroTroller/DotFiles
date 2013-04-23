@@ -1,6 +1,10 @@
 #!/usr/bin/env sh
 
 sh ~/DotFiles/symlink
-#sh ~/dot-files/puppet
+sh ~/DotFiles/Apt/install
+sh ~/DotFiles/Vim/plugin-install
+sh ~/DotFiles/Powerline/install
 
-source ~/.bashrc
+cd ~ >> /dev/null
+source ~/DotFiles/Symlink/bashrc >> /dev/null
+cd - >> /dev/null

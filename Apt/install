@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+
+sudo apt-get install python-software-properties -y >> /dev/null
+
+for package in `cat ~/DotFiles/Apt/get`; do
+    echo INSTALLATION : $package
+    sudo apt-get install $package -y >> /dev/null
+done

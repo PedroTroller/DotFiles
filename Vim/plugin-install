@@ -3,12 +3,13 @@
 for repo in `cat ~/DotFiles/Vim/repos`; do
     echo Repo ${repo}
     if [ -d ~/DotFiles/Symlink/vim/bundle/${repo##*/} ]; then
-        echo UPDATED
         cd ~/DotFiles/Symlink/vim/bundle/${repo##*/}
-        git pull
-        cd -
+        git pull >> /dev/null
+        cd - >> /dev/null
+        echo UPDATED
     else
         echo CREATED
-        git clone $repo ~/DotFiles/Symlink/vim/bundle/${repo##*/}
+        git clone $repo ~/DotFiles/Symlink/vim/bundle/${repo##*/} >> /dev/null
+        echo CREATED
     fi
 done

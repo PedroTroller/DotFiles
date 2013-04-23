@@ -120,5 +120,9 @@ for f in $(command ls ~/.node-completion); do
 done
 # }}}
 
-source ~/DotFiles/gitPromp
-source ~/DotFiles/aliases
+source ~/DotFiles/gitPromp >> /dev/null
+source ~/DotFiles/aliases >> /dev/null
+
+fc-cache -vf ~/.fonts >> /dev/null
+
+git config --global core.excludesfile ~/.gitignore

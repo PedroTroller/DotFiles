@@ -1,0 +1,14 @@
+#!/usr/bin
+
+for repo in `cat ~/DotFiles/Vim/repos`; do
+    echo Repo ${repo}
+    if [ -d ~/DotFiles/Symlink/vim/bundle/${repo##*/} ]; then
+        echo UPDATED
+        cd ~/DotFiles/Symlink/vim/bundle/${repo##*/}
+        git pull
+        cd -
+    else
+        echo CREATED
+        git clone $repo ~/DotFiles/Symlink/vim/bundle/${repo##*/}
+    fi
+done

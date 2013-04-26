@@ -1,4 +1,2 @@
 Symlink/vim/bundle/*
-Symlink/config/chromium/*
-Symlink/config/gtk-2.0
-Symlink/config/sublime-text-2
+Symlink/config/*

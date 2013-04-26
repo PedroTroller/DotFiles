@@ -2,6 +2,9 @@
 
 sh ~/DotFiles/symlink
 sh ~/DotFiles/Apt/install
+sh ~/DotFiles/Ruby/install
+sh ~/DotFiles/NodeJs/install
+sh ~/DotFiles/Composer/install
 sh ~/DotFiles/Vim/plugin-install
 sh ~/DotFiles/Powerline/install
 

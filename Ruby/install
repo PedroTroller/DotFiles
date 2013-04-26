@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+
+for package in `cat ~/DotFiles/Ruby/gem`; do
+    echo INSTALLATION : $package
+    sudo gem install $package >> /dev/null
+done

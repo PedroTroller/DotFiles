@@ -1,11 +1,13 @@
+curl
 apache2
-php5
-mysql-server
 postgresql
+mysql-server
+php5 php5-intl php5-mongo php5-pgsql php5-mysql php5-sqlite php5-imagick php5-curl php5-xdebug
 python
-vim
-node
+vim vim-nox meld
+nodejs npm
 synapse
 python-pip
-git
-tig
+git tig
+inotify-tools
+ruby libinotify-ruby

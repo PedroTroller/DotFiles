@@ -8,7 +8,6 @@ for repo in `cat ~/DotFiles/Vim/repos`; do
         cd - >> /dev/null
         echo UPDATED
     else
-        echo CREATED
         git clone $repo ~/DotFiles/Symlink/vim/bundle/${repo##*/} >> /dev/null
         echo CREATED
     fi

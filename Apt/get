@@ -10,4 +10,5 @@ synapse
 python-pip
 git tig
 inotify-tools
-ruby libinotify-ruby
+ruby ruby-dev libinotify-ruby
+exuberant-ctags

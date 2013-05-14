@@ -1,2 +1,4 @@
+rdoc
 less
 guard
+guard-ctags-composer

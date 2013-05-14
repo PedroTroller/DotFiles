@@ -2,5 +2,5 @@
 
 for package in `cat ~/DotFiles/NodeJs/npm`; do
     echo INSTALLATION : $package
-    sudo npm install $package -g >> /dev/null
+    sudo npm install --global $package >> /dev/null
 done

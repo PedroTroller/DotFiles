@@ -2,6 +2,8 @@
 
 alias sf='php app/console'
 alias cacl='sf cache:clear'
+alias rode='sf ro:de'
+alias phpspec='./bin/phpspec'
 alias gs='git status'
 alias gc='git commit'
 alias gps='git push'

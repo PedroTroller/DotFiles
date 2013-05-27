@@ -1,6 +1,8 @@
 #!/bin/bash
 
 alias sf='php app/console'
+alias symfony='teamocil symfony'
+alias tmux='tmux -2'
 alias cacl='sf cache:clear'
 alias rode='sf ro:de'
 alias phpspec='./bin/phpspec'

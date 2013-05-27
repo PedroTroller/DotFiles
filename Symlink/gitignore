@@ -1,3 +1,9 @@
+## GUARD 
+
 Guardfile
 tags
 *.tags
+
+## SYMFONY
+
+parameters.ini

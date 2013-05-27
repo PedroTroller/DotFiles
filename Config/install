@@ -1,0 +1,6 @@
+#!/usr/bin
+mkdir ~/.config -p
+for file in `ls -1 ~/DotFiles/Config`; do 
+    echo Config for $file
+    ln -s  ~/DotFiles/Symlink/$file ~/.config/$file
+done

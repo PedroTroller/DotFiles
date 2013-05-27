@@ -1,6 +1,5 @@
 #!/usr/bin
 for file in `ls -1 ~/DotFiles/Symlink`; do 
     echo Symlink for "$file"
-    rm -rf ~/.$file
-    ln -s  ~/DotFiles/Symlink/$file ~/.$file
+    ln -s -f  ~/DotFiles/Symlink/$file ~/.$file
 done

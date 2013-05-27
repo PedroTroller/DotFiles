@@ -8,3 +8,5 @@
 	default = current
 [pull]
 	default = current
+[init]
+	templatedir = ~/.git_template

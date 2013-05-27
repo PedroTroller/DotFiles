@@ -6,3 +6,7 @@ for package in `cat ~/DotFiles/Apt/get`; do
     echo INSTALLATION : $package
     sudo apt-get install $package -y >> /dev/null
 done
+
+sudo apt-get update -y >> /dev/null
+sudo apt-get upgrade -y >> /dev/null
+sudo apt-get autoremove -y >> /dev/null

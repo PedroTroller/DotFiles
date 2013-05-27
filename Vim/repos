@@ -10,3 +10,4 @@ git@github.com:tpope/vim-ragtag.git
 git@github.com:evidens/vim-twig.git
 git@github.com:Lokaltog/vim-powerline.git
 git@github.com:vim-scripts/phpfolding.vim.git
+git@github.com:airblade/vim-gitgutter.git

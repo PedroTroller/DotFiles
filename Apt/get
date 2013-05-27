@@ -12,3 +12,4 @@ git tig
 inotify-tools
 ruby ruby-dev libinotify-ruby
 exuberant-ctags
+tmux

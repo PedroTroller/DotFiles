@@ -44,11 +44,20 @@ function git_dirty_flag {
 
 function prompt_func() {
     previous_return_value=$?;
+
+    #FROM HERZULT
+    if [[ $previous_return_value =~ "0" ]];
+    then
+        smiley="${GREEN}☺${color_base} "
+    else
+        smiley="${RED}☹ ${color_base}"
+    fi
+
     #The lowercase w is the full current working directory
     #prompt="${TITLEBAR}${BLUE}[${RED}\w${GREEN}$(parse_git_branch)${BLUE}]${COLOR_NONE}"
     
     #Capital W is just the trailing part of the current working directory
-    prompt="${TITLEBAR}${BLUE}[${RED}\W${GREEN}$(parse_git_branch)${BLUE}]${COLOR_NONE}"
+    prompt="${smiley}${TITLEBAR}${BLUE}[${RED}\W${GREEN}$(parse_git_branch)${BLUE}]${COLOR_NONE}"
     
     if test $previous_return_value -eq 0
     then

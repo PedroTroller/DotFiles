@@ -128,3 +128,7 @@ done
 # }}}
 
 fc-cache -vf ~/.fonts >> /dev/null
+
+printf '\033]12;white\033\\' > /dev/null
+
+export PATH=$PATH:./bin/

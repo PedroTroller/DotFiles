@@ -1,3 +1,13 @@
-#!/usr/bin
+#!/usr/bash
 
 pip install --user git+git://github.com/Lokaltog/powerline
+
+if [ -d ~/DotFiles/Symlink/tmux-powerline ]; then
+    cd ~/DotFiles/Symlink/tmux-powerline
+    git pull >> /dev/null
+    echo UPDATED
+else
+    git clone git@github.com:erikw/tmux-powerline.git ~/DotFiles/Symlink/tmux-powerline >> /dev/null
+    echo CREATED
+fi
+

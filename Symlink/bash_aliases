@@ -2,6 +2,7 @@
 
 alias sf='php app/console'
 alias symfony='teamocil symfony'
+alias sinit='sudo setfacl -R -m u:www-data:rwX -m u:`whoami`:rwX app/cache app/logs ; sudo setfacl -dR -m u:www-data:rwx -m u:`whoami`:rwx app/cache app/logs ; cacl'
 alias tmux='tmux -2'
 alias cacl='sf cache:clear'
 alias rode='sf ro:de'
@@ -13,6 +14,7 @@ alias gpu='git pull'
 alias gck='git checkout'
 alias gcl='git clone'
 alias log="git log --graph --pretty=format:'%Cred%h %Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
+alias :q="exit"
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'

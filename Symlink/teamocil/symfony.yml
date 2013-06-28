@@ -22,14 +22,14 @@ session:
                     cmd:
                         - 'if [ ! -f app/logs/dev.log ]; then touch app/logs/dev.log ; fi'
                         - tail -f app/logs/dev.log app/logs/test.log
-                    width: 50
+                    width: 30
                 -
                     cmd:
-                        - ncmpcpp -h musicbox.local
-                    height: 55
+                        - tailf /var/log/apache2/error.log
+                    height: 50
                 -
                     cmd:
                         - 'if [ ! -f pear.tags ]; then ctags -R -f pear.tags /usr/share/pear ; fi'
                         - 'if [ ! -f Guardfile ]; then guard init ctags-composer ; fi'
                         - guard
-                    height: 20
+                    height: 0

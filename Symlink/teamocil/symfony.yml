@@ -17,6 +17,7 @@ session:
                 -
                     cmd:
                         - tmux select-window -t editor
+                        - clear
                     focus: true
                 -
                     cmd:

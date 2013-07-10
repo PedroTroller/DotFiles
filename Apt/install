@@ -2,11 +2,17 @@
 
 sudo apt-get install python-software-properties -y >> /dev/null
 
+for ppa in `cat ~/DotFiles/Apt/ppa`; do
+    echo ADD PPA : $ppa
+    sudo add-apt-repository $package -y >> /dev/null
+done
+
+sudo apt-get update -y >> /dev/null
+
 for package in `cat ~/DotFiles/Apt/get`; do
     echo INSTALLATION : $package
     sudo apt-get install $package -y >> /dev/null
 done
 
-sudo apt-get update -y >> /dev/null
 sudo apt-get upgrade -y >> /dev/null
 sudo apt-get autoremove -y >> /dev/null

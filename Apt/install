@@ -8,6 +8,7 @@ for ppa in `cat ~/DotFiles/Apt/ppa`; do
 done
 
 sudo apt-get update -y >> /dev/null
+suro apt-get -f install -y >> /dev/null
 
 for package in `cat ~/DotFiles/Apt/get`; do
     echo INSTALLATION : $package

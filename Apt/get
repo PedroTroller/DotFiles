@@ -14,3 +14,4 @@ ruby ruby-dev libinotify-ruby
 exuberant-ctags
 tmux
 ponysay
+openjdk-7-jre-headless

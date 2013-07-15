@@ -1,6 +1,7 @@
 #!/bin/bash
 
 sh ~/DotFiles/symlink
+sh ~/DotFiles/WorkSpace/install
 sh ~/DotFiles/Config/install
 sh ~/DotFiles/Apt/install
 sh ~/DotFiles/Ruby/install

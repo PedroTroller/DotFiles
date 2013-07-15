@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+cd ~/Tools >> /dev/null
+
+wget https://selenium.googlecode.com/files/selenium-server-standalone-2.33.0.jar --output-document=selenium.jar -b >> /dev/null
+
+cd - >> /dev/null

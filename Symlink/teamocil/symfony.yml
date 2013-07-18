@@ -28,9 +28,19 @@ session:
                     cmd:
                         - tailf /var/log/apache2/error.log
                     height: 50
+        -
+            cmd_separator: "\n"
+            with_env_var: false
+            name: tools
+            filters:
+                before: clear
+            splits:
                 -
                     cmd:
                         - 'if [ ! -f pear.tags ]; then ctags -R -f pear.tags /usr/share/pear ; fi'
                         - 'if [ ! -f Guardfile ]; then guard init ctags-composer ; fi'
                         - guard
-                    height: 0
+                -
+                    cmd:
+                        - selenium
+                    width: 50

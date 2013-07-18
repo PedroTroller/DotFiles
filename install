@@ -11,6 +11,7 @@ sh ~/DotFiles/Vim/plugin-install
 sh ~/DotFiles/Powerline/install
 sh ~/DotFiles/Apache/install
 sh ~/DotFiles/Selenium/install
+sh ~/DotFiles/WkHtmlToPDF/install
 
 cd ~ >> /dev/null
 source ~/DotFiles/Symlink/bashrc >> /dev/null

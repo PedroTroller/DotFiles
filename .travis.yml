@@ -1,7 +1,7 @@
 language: bash
 
 before_script:
-    - cd ~
+    - cd ..
     - pwd
     - ls
 

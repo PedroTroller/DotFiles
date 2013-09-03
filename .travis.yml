@@ -1,0 +1,10 @@
+language: bash
+
+before_script:
+    - cd ..
+
+notifications:
+    hipchat: 2c936ef39466d8b91e7f869550e571@vpauto
+
+script:
+    - /DotFiles/install

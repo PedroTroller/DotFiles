@@ -1,5 +1,9 @@
 language: bash
 
+before_install:
+    - mkdir DotFiles
+    - cd DotFiles
+
 before_script:
     - cd ..
 

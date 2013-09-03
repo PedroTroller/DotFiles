@@ -2,6 +2,6 @@
 
 cd ~/Tools >> /dev/null
 
-wget https://selenium.googlecode.com/files/selenium-server-standalone-2.35.0.jar --output-document=selenium.jar -b >> /dev/null
+wget https://selenium.googlecode.com/files/selenium-server-standalone-2.33.0.jar --output-document=selenium.jar 
 
 cd - >> /dev/null

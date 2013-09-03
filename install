@@ -4,6 +4,7 @@ sh ~/DotFiles/symlink
 sh ~/DotFiles/WorkSpace/install
 sh ~/DotFiles/Config/install
 sh ~/DotFiles/Apt/install
+sh ~/DotFiles/Firefox/install
 sh ~/DotFiles/Ruby/install
 sh ~/DotFiles/NodeJs/install
 sh ~/DotFiles/Composer/install

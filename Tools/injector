@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+
+if grep -q $1 "$2"; then
+    echo "$1 in $2 : PRESENT"
+else
+    echo "$1 in $2 : ADDED"
+    echo $1 >> $2
+fi

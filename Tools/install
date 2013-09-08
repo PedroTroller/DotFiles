@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+
+for file in `ls -1 ~/DotFiles/Tools`; do 
+    if [ "$file" != "install" ]; then
+        echo Tool deployement "$file"
+        ln -s -f  ~/DotFiles/Tools/$file ~/Tools/$file
+    fi
+done

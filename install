@@ -8,7 +8,7 @@ sh ~/DotFiles/Firefox/install
 sh ~/DotFiles/Ruby/install
 sh ~/DotFiles/NodeJs/install
 sh ~/DotFiles/Composer/install
-sh ~/DotFiles/Vim/plugin-install
+sh ~/DotFiles/Vim/install
 sh ~/DotFiles/Powerline/install
 sh ~/DotFiles/Apache/install
 sh ~/DotFiles/Selenium/install

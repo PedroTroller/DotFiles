@@ -9,7 +9,6 @@ git@github.com:arnaud-lb/vim-php-namespace.git
 git@github.com:tpope/vim-ragtag.git
 git@github.com:evidens/vim-twig.git
 git@github.com:Lokaltog/vim-powerline.git
-git@github.com:vim-scripts/phpfolding.vim.git
 git@github.com:airblade/vim-gitgutter.git
 git@github.com:mileszs/ack.vim.git
 git@github.com:godlygeek/tabular.git

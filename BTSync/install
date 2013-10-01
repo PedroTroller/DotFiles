@@ -1,0 +1,19 @@
+#!/bin/bash
+
+cd ~/Tools >> /dev/null
+
+sudo rm /usr/bin/btsync -f
+
+MACHINE_TYPE=`uname -m`
+if [ ${MACHINE_TYPE} == 'x86_64' ]; then
+    wget http://download-lb.utorrent.com/endpoint/btsync/os/linux-x64/track/stable --output-document=btsync.tar.gz >> /dev/null
+else
+    wget http://download-lb.utorrent.com/endpoint/btsync/os/linux-i386/track/stable --output-document=btsync.tar.gz >> /dev/null
+fi
+
+tar -zxvf btsync.tar.gz >> /dev/null
+sudo ln -s Tools/btsync /usr/bin/btsync >> /dev/null
+
+rm btsync.tar.gz -f
+
+cd - >> /dev/null

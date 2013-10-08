@@ -1,0 +1,27 @@
+session:
+    name: <%= File.basename(Dir.getwd) %>
+    windows:
+        -
+            cmd_separator: "\n"
+            with_env_var: false
+            name: editor
+            splits:
+                - { cmd: vim }
+        -
+            cmd_separator: "\n"
+            with_env_var: false
+            name: shell
+            filters:
+                before: clear
+            splits:
+                -
+                    cmd:
+                        - tmux select-window -t editor
+                        - clear
+                    focus: true
+                -
+                    cmd:
+                        - 'if [ ! -f pear.tags ]; then ctags -R -f pear.tags /usr/share/pear ; fi'
+                        - 'if [ ! -f Guardfile ]; then guard init ctags-composer ; fi'
+                        - guard
+                    width: 10

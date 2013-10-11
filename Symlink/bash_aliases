@@ -18,6 +18,7 @@ alias gck='git checkout'
 alias gcl='git clone'
 alias log="git log --graph --pretty=format:'%Cred%h %Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
 alias :q="exit"
+alias :e="vim"
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'

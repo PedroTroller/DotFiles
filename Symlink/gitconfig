@@ -1,12 +1,12 @@
 [core]
-	excludesfile = /home/pedro/.gitignore
+    excludesfile = /home/pedro/.gitignore
 [color]
-	ui = true
+    ui = true
 [user]
-	email = plazanet.pierre@gmail.com
+    email = plazanet.pierre@gmail.com
 [push]
-	default = current
+    default = current
 [pull]
-	default = current
+    default = current
 [init]
-	templatedir = ~/.git_template
+    templatedir = ~/.git_template

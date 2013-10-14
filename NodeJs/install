@@ -1,6 +1,5 @@
 #!/usr/bin/env sh
 
-sudo apt-get autoremove nodejs -y >> /dev/null
 sudo apt-get install python-software-properties -y >> /dev/null
 sudo add-apt-repository ppa:chris-lea/node.js -y >> /dev/null
 sudo apt-get update -y >> /dev/null

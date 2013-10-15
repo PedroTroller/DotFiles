@@ -12,6 +12,7 @@ sh ~/DotFiles/Composer/install
 sh ~/DotFiles/Vim/install
 sh ~/DotFiles/Powerline/install
 sh ~/DotFiles/Apache/install
+sh ~/DotFiles/VHosts/install
 sh ~/DotFiles/Selenium/install
 sh ~/DotFiles/WkHtmlToPDF/install
 sh ~/DotFiles/BTSync/install

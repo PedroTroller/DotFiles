@@ -1,4 +1,4 @@
-#!/usr/bin/php
-<?php
+#!/bin/bash
 
-echo 'etest';
+sudo php ~/DotFiles/VHosts/install.php
+sudo service apache2 restart

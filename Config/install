@@ -2,5 +2,5 @@
 mkdir ~/.config -p
 for file in `ls -1 ~/DotFiles/Config`; do 
     echo Config for $file
-    ln -s -f  ~/DotFiles/Symlink/$file ~/.config/$file
+    ln -s -f  ~/DotFiles/Config/$file ~/.config/$file
 done

@@ -2,5 +2,6 @@
 mkdir ~/.config -p
 for file in `ls -1 ~/DotFiles/Config`; do 
     echo Config for $file
+    rm -rf -f ~/.config/$file
     ln -s -f  ~/DotFiles/Config/$file ~/.config/$file
 done

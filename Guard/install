@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+rm -f Guardfile
+ln -s ~/DotFiles/Guard/Guardfile Guardfile

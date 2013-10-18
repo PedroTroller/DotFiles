@@ -22,6 +22,6 @@ session:
                 -
                     cmd:
                         - 'if [ ! -f pear.tags ]; then ctags -R -f pear.tags /usr/share/pear ; fi'
-                        - 'if [ ! -f Guardfile ]; then guard init ctags-composer ; fi'
+                        - 'if [ ! -f Guardfile ]; then ~/DotFiles/Guard/install ; fi'
                         - guard
                     width: 10

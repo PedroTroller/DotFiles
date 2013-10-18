@@ -9,7 +9,7 @@
       <property name="position-locked" type="bool" value="true"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="2"/>
-        <value type="int" value="3"/>
+        <value type="int" value="1"/>
         <value type="int" value="4"/>
         <value type="int" value="5"/>
         <value type="int" value="6"/>
@@ -35,10 +35,6 @@
       <property name="show-handle" type="bool" value="false"/>
       <property name="show-labels" type="bool" value="false"/>
     </property>
-    <property name="plugin-3" type="string" value="separator">
-      <property name="style" type="uint" value="0"/>
-      <property name="expand" type="bool" value="true"/>
-    </property>
     <property name="plugin-4" type="string" value="systray">
       <property name="show-frame" type="bool" value="false"/>
       <property name="size-max" type="uint" value="22"/>
@@ -47,9 +43,9 @@
         <value type="string" value="google chrome"/>
         <value type="string" value="exe"/>
         <value type="string" value="applet networkmanager"/>
-        <value type="string" value="synapse"/>
-        <value type="string" value="bluetooth"/>
         <value type="string" value="blueman-applet"/>
+        <value type="string" value="bluetooth"/>
+        <value type="string" value="synapse"/>
       </property>
     </property>
     <property name="plugin-5" type="string" value="indicator">
@@ -87,6 +83,10 @@
       </property>
     </property>
     <property name="plugin-10" type="string" value="screenshooter"/>
+    <property name="plugin-1" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+      <property name="expand" type="bool" value="true"/>
+    </property>
   </property>
   <property name="configver" type="int" value="2"/>
 </channel>

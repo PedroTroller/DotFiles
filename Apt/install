@@ -11,7 +11,7 @@ sudo apt-get update -y >> /dev/null
 sudo apt-get -f install -y >> /dev/null
 
 for package in `cat ~/DotFiles/Apt/get`; do
-    echo INSTALLATION : $package
+    echo INSTALL : $package
     sudo apt-get install $package -y >> /dev/null
 done
 

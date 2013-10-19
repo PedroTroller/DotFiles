@@ -41,11 +41,11 @@
       <property name="names-visible" type="array">
         <value type="string" value="xfce4-power-manager"/>
         <value type="string" value="google chrome"/>
-        <value type="string" value="exe"/>
         <value type="string" value="applet networkmanager"/>
         <value type="string" value="blueman-applet"/>
-        <value type="string" value="bluetooth"/>
         <value type="string" value="synapse"/>
+        <value type="string" value="bluetooth"/>
+        <value type="string" value="exe"/>
       </property>
     </property>
     <property name="plugin-5" type="string" value="indicator">

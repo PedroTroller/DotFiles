@@ -8,6 +8,6 @@ echo INSTALLATION : nodejs
 nodejs --version
 
 for package in `cat ~/DotFiles/NodeJs/npm`; do
-    echo INSTALLATION : $package
+    echo INSTALL : $package
     sudo npm install --global $package >> /dev/null
 done

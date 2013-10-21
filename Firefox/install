@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
 
-echo INSTALLATION : firefox
+echo INSTALL : firefox
 sudo apt-get autoremove firefox -y > /dev/null
 sudo apt-get install firefox=20.0+build1-0ubuntu2 -y > /dev/null

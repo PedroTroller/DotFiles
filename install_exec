@@ -5,7 +5,6 @@ sh ~/DotFiles/WorkSpace/install
 sh ~/DotFiles/SSH/install
 sh ~/DotFiles/Config/install
 sh ~/DotFiles/Apt/install
-sh ~/DotFiles/Firefox/install
 sh ~/DotFiles/Ruby/install
 sh ~/DotFiles/NodeJs/install
 sh ~/DotFiles/Composer/install
@@ -14,5 +13,6 @@ sh ~/DotFiles/Powerline/install
 sh ~/DotFiles/Apache/install
 sh ~/DotFiles/VHosts/install
 sh ~/DotFiles/Selenium/install
+sh ~/DotFiles/PhantomJs/install
 sh ~/DotFiles/WkHtmlToPDF/install
 sh ~/DotFiles/BTSync/install

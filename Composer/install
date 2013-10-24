@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
 curl -sS https://getcomposer.org/installer | php
-sudo mv composer.phar /usr/local/bin/composer
+mv composer.phar ~/Tools/composer >> /dev/null
 
 sudo composer selfupdate >> /dev/null

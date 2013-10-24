@@ -1,0 +1,18 @@
+#!/bin/bash
+
+cd ~/Tools >> /dev/null
+
+if [ `getconf LONG_BIT` = "64" ]; then
+    wget https://phantomjs.googlecode.com/files/phantomjs-1.9.2-linux-x86_64.tar.bz2 --output-document=phantomjs.tar.bz2 >> /dev/null
+else
+    wget https://phantomjs.googlecode.com/files/phantomjs-1.9.2-linux-i686.tar.bz2 --output-document=phantomjs.tar.bz2 >> /dev/null
+fi
+
+mkdir ~/Tools/PhantomJs >> /dev/null
+tar -jxvf phantomjs.tar.bz2 -C ~/Tools/PhantomJs  >> /dev/null
+mv PhantomJs/**/bin/phantomjs ~/Tools >> /dev/null
+rm -rf PhantomJs/ >> /dev/null
+rm phantomjs.tar.bz2 -f >> /dev/null
+
+
+cd - >> /dev/null

@@ -2,16 +2,14 @@
 
 cd ~/Tools >> /dev/null
 
-sudo rm /usr/bin/wkhtmltopdf -f
-
 if [ `getconf LONG_BIT` = "64" ]; then
     wget https://wkhtmltopdf.googlecode.com/files/wkhtmltopdf-0.11.0_rc1-static-amd64.tar.bz2 --output-document=wkhtmltopdf.tar.bz2 >> /dev/null
     tar -jxvf wkhtmltopdf.tar.bz2 >> /dev/null
-    sudo ln -s Tools/wkhtmltopdf-amd64 /usr/bin/wkhtmltopdf >> /dev/null
+    mv ~/Tools/wkhtmltopdf-amd64 wkhtmltopdf
 else
     wget https://wkhtmltopdf.googlecode.com/files/wkhtmltopdf-0.11.0_rc1-static-i386.tar.bz2 --output-document=wkhtmltopdf.tar.bz2 >> /dev/null
     tar -jxvf wkhtmltopdf.tar.bz2 >> /dev/null
-    sudo ln -s Tools/wkhtmltopdf-i386 /usr/bin/wkhtmltopdf >> /dev/null
+    mv ~/Tools/wkhtmltopdf-i386 wkhtmltopdf
 fi
 
 rm wkhtmltopdf.tar.bz2 -f

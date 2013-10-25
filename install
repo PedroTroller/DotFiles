@@ -1,6 +1,7 @@
 #!/bin/bash
 
 cd ~/DotFiles
+git reset --hard HEAD
 git pull origin master >> /dev/null
 cd - >> /dev/null
 

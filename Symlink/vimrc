@@ -328,3 +328,5 @@ highlight Cursor guifg=white guibg=white
 
 "PHPCS MD CC
 let g:phpqa_codesniffer_autorun = 0
+
+nmap <F8> :TagbarToggle<CR>

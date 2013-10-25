@@ -12,3 +12,4 @@ git@github.com:Lokaltog/vim-powerline.git
 git@github.com:airblade/vim-gitgutter.git
 git@github.com:mileszs/ack.vim.git
 git@github.com:godlygeek/tabular.git
+git@github.com:majutsushi/tagbar.git

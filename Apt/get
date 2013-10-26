@@ -12,5 +12,6 @@ inotify-tools
 ruby ruby-dev libinotify-ruby
 exuberant-ctags
 tmux
+gparted
 ponysay
 openjdk-7-jre-headless

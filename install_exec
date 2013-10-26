@@ -4,6 +4,7 @@ sh ~/DotFiles/symlink
 sh ~/DotFiles/WorkSpace/install
 sh ~/DotFiles/SSH/install
 sh ~/DotFiles/Config/install
+sh ~/DotFiles/MysqlServer/install
 sh ~/DotFiles/Apt/install
 sh ~/DotFiles/Ruby/install
 sh ~/DotFiles/NodeJs/install

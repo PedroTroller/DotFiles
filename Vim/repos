@@ -13,3 +13,4 @@ git@github.com:airblade/vim-gitgutter.git
 git@github.com:mileszs/ack.vim.git
 git@github.com:godlygeek/tabular.git
 git@github.com:majutsushi/tagbar.git
+git@github.com:Herzult/phpspec-vim.git

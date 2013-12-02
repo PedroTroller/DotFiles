@@ -2,5 +2,5 @@
 
 for package in `cat ~/DotFiles/Ruby/gem`; do
     echo INSTALL : $package
-    sudo gem install $package >> /dev/null
+    sudo gem install $package --no-ri --no-rdoc >> /dev/null
 done

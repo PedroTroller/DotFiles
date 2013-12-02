@@ -1,5 +1,6 @@
 #!/bin/bash
 
+alias nano="vim"
 alias node="nodejs"
 alias sf='php app/console'
 alias symfony='teamocil symfony'

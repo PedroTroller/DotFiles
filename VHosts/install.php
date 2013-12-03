@@ -55,7 +55,8 @@ while (false !== ($entry = readdir($handle))) {
     if (!in_array($entry, ['.', '..']) && is_dir($dir.$entry)) {
         $content[] = sprintf("\n");
         $content[] = sprintf("<VirtualHost *:80>\n");
-        $content[] = sprintf("\tServerAlias %s.dev\n", strtolower($entry));
+        $content[] = sprintf("\tServerName %s.dev\n", strtolower($entry));
+        $content[] = sprintf("\tServerAlias %s.dev\n", $entry);
         if (is_dir($dir.$entry.'/web/')) {
             $content[] = sprintf("\tDocumentRoot %s/web\n", $dir.$entry);
         } else {

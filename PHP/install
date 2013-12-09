@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+sudo ~/Tools/configure /etc/php5/cli/php.ini memory_limit 2048M " = " > \dev\null
+sudo ~/Tools/configure /etc/php5/cli/php.ini xdebug.max_nesting_level 20000 " = " > \dev\null

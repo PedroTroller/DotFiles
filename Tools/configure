@@ -1,0 +1,28 @@
+#!/usr/bin/php
+
+<?php
+
+if (5 !== count($argv)) {
+    throw new \Exception('configure file param value parser');
+}
+
+list($cmd, $file, $param, $value, $parser) = $argv;
+
+$lines = explode("\n", file_get_contents($file));
+$result = [];
+$found = false;
+
+foreach ($lines as $line) {
+    if (0 === strpos(trim($line), $param)) {
+        $result[] = sprintf('%s%s%s', $param, $parser, $value);
+        $found = true;
+    } else {
+        $result[] = $line;
+    }
+}
+
+if (false === $found) {
+    $result[] = sprintf('%s%s%s', $param, $parser, $value);
+}
+
+file_put_contents($file, implode("\n", $result));

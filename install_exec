@@ -2,6 +2,7 @@
 
 sh ~/DotFiles/symlink
 sh ~/DotFiles/WorkSpace/install
+sh ~/DotFiles/Tools/install
 sh ~/DotFiles/SSH/install
 sh ~/DotFiles/Config/install
 sh ~/DotFiles/MysqlServer/install

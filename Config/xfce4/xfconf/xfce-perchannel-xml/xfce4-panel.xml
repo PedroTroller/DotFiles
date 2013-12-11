@@ -47,6 +47,8 @@
     </property>
     <property name="plugin-7" type="string" value="clock">
       <property name="digital-format" type="string" value="%H:%M"/>
+      <property name="mode" type="uint" value="4"/>
+      <property name="show-frame" type="bool" value="true"/>
     </property>
     <property name="plugin-8" type="string" value="separator">
       <property name="style" type="uint" value="0"/>

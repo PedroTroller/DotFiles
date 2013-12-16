@@ -13,4 +13,5 @@ ruby ruby-dev libinotify-ruby
 exuberant-ctags
 tmux
 gparted
+phpunit
 openjdk-7-jre-headless

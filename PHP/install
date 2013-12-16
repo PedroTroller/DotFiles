@@ -1,4 +1,6 @@
 #!/usr/bin/env sh
 
-sudo ~/Tools/configure /etc/php5/cli/php.ini memory_limit 2048M " = " > \dev\null
-sudo ~/Tools/configure /etc/php5/cli/php.ini xdebug.max_nesting_level 20000 " = " > \dev\null
+sudo ~/Tools/configure /etc/php5/cli/php.ini memory_limit 2048M " = " >> /dev/null
+sudo ~/Tools/configure /etc/php5/cli/php.ini xdebug.max_nesting_level 20000 " = " >> /dev/null
+sudo ~/Tools/configure /etc/php5/cli/php.ini date.timezone "Europe/Paris" " = " >> /dev/null
+sudo ~/Tools/configure /etc/php5/cli/php.ini short_open_tag Off " = " >> /dev/null

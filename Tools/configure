@@ -8,15 +8,29 @@ if (5 !== count($argv)) {
 
 list($cmd, $file, $param, $value, $parser) = $argv;
 
+$strings = [
+    $param,
+    sprintf('#%s', $param),
+    sprintf(';%s', $param),
+];
+
 $lines = explode("\n", file_get_contents($file));
 $result = [];
 $found = false;
 
 foreach ($lines as $line) {
-    if (0 === strpos(trim($line), $param)) {
-        $result[] = sprintf('%s%s%s', $param, $parser, $value);
-        $found = true;
-    } else {
+    $unit = false;
+    foreach ($strings as $str) {
+        if (0 === strpos(trim($line), $str)
+        && strlen($str) < strlen(trim($line)))
+        {
+            $result[] = sprintf('%s%s%s', $param, $parser, $value);
+            $found = true;
+            $unit = true;
+        }
+    }
+
+    if (false === $unit) {
         $result[] = $line;
     }
 }

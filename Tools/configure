@@ -2,16 +2,23 @@
 
 <?php
 
-if (5 !== count($argv)) {
+if (3 > count($argv)) {
     throw new \Exception('configure file param value parser');
 }
 
-list($cmd, $file, $param, $value, $parser) = $argv;
+$args = [ 0 => null, 1 => null, 2 => null, 3 => null, 4 => ' = ' ];
+
+foreach ($argv as $i => $v) {
+    $args[$i] = $v;
+}
+
+list($cmd, $file, $param, $value, $parser) = $args;
 
 $strings = [
     $param,
     sprintf('#%s', $param),
     sprintf(';%s', $param),
+    sprintf('//%s', $param),
 ];
 
 $lines = explode("\n", file_get_contents($file));
@@ -24,7 +31,7 @@ foreach ($lines as $line) {
         if (0 === strpos(trim($line), $str)
         && strlen($str) < strlen(trim($line)))
         {
-            $result[] = sprintf('%s%s%s', $param, $parser, $value);
+            $result[] = format($param, $parser, $value);
             $found = true;
             $unit = true;
         }
@@ -36,7 +43,17 @@ foreach ($lines as $line) {
 }
 
 if (false === $found) {
-    $result[] = sprintf('%s%s%s', $param, $parser, $value);
+    $result[] = format($param, $parser, $value);
 }
 
 file_put_contents($file, implode("\n", $result));
+
+function format($param, $parser, $value)
+{
+    if ($value === null) {
+
+        return sprintf('%s', $param);
+    }
+
+    return sprintf('%s%s%s', $param, $parser, $value);
+}

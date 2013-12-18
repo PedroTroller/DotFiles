@@ -10,6 +10,7 @@ alias selenium="phantomjs --webdriver=4444"
 alias tmux='tmux -2'
 alias cacl='sf cache:clear'
 alias rode='sf ro:de'
+alias contde='sf cont:de'
 alias nyan='phpspec --format=nyan'
 alias gs='git status'
 alias gc='git commit'

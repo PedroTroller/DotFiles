@@ -46,7 +46,7 @@ if (false === $found) {
     $result[] = format($param, $parser, $value);
 }
 
-file_put_contents($file, implode("\n", $result));
+file_put_contents($file, implode("\n", aunique($result)));
 
 function format($param, $parser, $value)
 {
@@ -56,4 +56,19 @@ function format($param, $parser, $value)
     }
 
     return sprintf('%s%s%s', $param, $parser, $value);
+}
+
+function aunique($array)
+{
+    $result = [];
+
+    foreach ($array as $item) {
+        if ('' === $item) {
+            $result[] = $item;
+        } else if (!in_array($item, $result)) {
+            $result[] = $item;
+        }
+    }
+
+    return $result;
 }

@@ -129,7 +129,6 @@
       <property name="&lt;Alt&gt;F5" type="string" value="maximize_horiz_key"/>
       <property name="&lt;Alt&gt;F6" type="string" value="maximize_vert_key"/>
       <property name="&lt;Control&gt;&lt;Alt&gt;Down" type="string" value="down_workspace_key"/>
-      <property name="&lt;Alt&gt;F7" type="string" value="maximize_window_key"/>
       <property name="&lt;Alt&gt;F8" type="string" value="stick_window_key"/>
       <property name="&lt;Alt&gt;F9" type="string" value="hide_window_key"/>
       <property name="&lt;Alt&gt;F12" type="string" value="above_key"/>
@@ -165,6 +164,7 @@
       <property name="&lt;Control&gt;F1" type="string" value="workspace_1_key"/>
       <property name="&lt;Control&gt;F11" type="string" value="workspace_11_key"/>
       <property name="override" type="bool" value="true"/>
+      <property name="&lt;Alt&gt;w" type="string" value="maximize_window_key"/>
     </property>
   </property>
   <property name="providers" type="array">

@@ -104,7 +104,7 @@ set undolevels=1000             " use many levels of undo
 "set noundofile
 
 "activate mouse!
-set mouse=a
+set mouse-=a
 
 "unmap arrows
 "noremap  <up>    <nop>

@@ -133,3 +133,5 @@ printf '\033]12;white\033\\' > /dev/null
 
 export PATH=$PATH:./bin/
 export PATH=$PATH:~/Tools/
+
+[[ $TERM != "screen" ]] && exec tmux

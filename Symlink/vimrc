@@ -277,7 +277,6 @@ let g:ctrlp_cmd = 'CtrlPMRU'
 let g:ctrlp_match_window_bottom = 0
 
 " PHPCS
-let g:phpqa_codesniffer_args = "--standard=Zend"
 let &colorcolumn = join(range(81,999),",")
 
 autocmd BufWrite * :call <SID>MkdirsIfNotExists(expand('<afile>:h'))

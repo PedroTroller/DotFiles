@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+
+sudo pear channel-discover pear.phpmd.org > /dev/null
+sudo pear channel-discover pear.pdepend.org > /dev/null
+
+for package in `cat ~/DotFiles/Pear/packages`; do
+    echo INSTALL : $package
+    sudo pear install $package > /dev/null
+done

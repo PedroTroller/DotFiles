@@ -3,4 +3,4 @@
 sudo add-apt-repository ppa:vincent-c/ppa -y >> /dev/null
 sudo apt-get update >> /dev/null
 sudo apt-get install ponysay -y >> /dev/null
-echo 'INSTALL ponysay'
+echo 'INSTALL : ponysay'

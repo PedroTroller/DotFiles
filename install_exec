@@ -11,6 +11,7 @@ sh ~/DotFiles/PonySay/install
 sh ~/DotFiles/Ruby/install
 sh ~/DotFiles/NodeJs/install
 sh ~/DotFiles/Composer/install
+sh ~/DotFiles/Pear/install
 sh ~/DotFiles/Vim/install
 sh ~/DotFiles/Powerline/install
 sh ~/DotFiles/Apache/install

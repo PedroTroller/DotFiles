@@ -31,7 +31,7 @@ foreach ($lines as $line) {
         if (0 === strpos(trim($line), $str)
         && strlen($str) < strlen(trim($line)))
         {
-            $result[] = format($param, $parser, $value);
+            $result = insertConfig($result, format($param, $parser, $value));
             $found = true;
             $unit = true;
         }
@@ -43,10 +43,19 @@ foreach ($lines as $line) {
 }
 
 if (false === $found) {
-    $result[] = format($param, $parser, $value);
+    $result = insertConfig($result, format($param, $parser, $value));
 }
 
-file_put_contents($file, implode("\n", aunique($result)));
+file_put_contents($file, implode("\n", $result));
+
+function insertConfig($array, $line)
+{
+    if (!in_array($line, $array)) {
+        $array[] = $line;
+    }
+
+    return $array;
+}
 
 function format($param, $parser, $value)
 {
@@ -56,19 +65,4 @@ function format($param, $parser, $value)
     }
 
     return sprintf('%s%s%s', $param, $parser, $value);
-}
-
-function aunique($array)
-{
-    $result = [];
-
-    foreach ($array as $item) {
-        if ('' === $item) {
-            $result[] = $item;
-        } else if (!in_array($item, $result)) {
-            $result[] = $item;
-        }
-    }
-
-    return $result;
 }

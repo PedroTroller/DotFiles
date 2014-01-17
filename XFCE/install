@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+sudo add-apt-repository ppa:xubuntu-dev/xfce-4.12 -y > \dev\null
+sudo apt-get update -y > \dev\null
+sudo apt-get dist-upgrade -y > \dev\null

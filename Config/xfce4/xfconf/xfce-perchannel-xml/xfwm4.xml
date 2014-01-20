@@ -75,5 +75,6 @@
     <property name="wrap_cycle" type="bool" value="true"/>
     <property name="wrap_layout" type="bool" value="true"/>
     <property name="margin_bottom" type="int" value="0"/>
+    <property name="sync_to_vblank" type="bool" value="false"/>
   </property>
 </channel>

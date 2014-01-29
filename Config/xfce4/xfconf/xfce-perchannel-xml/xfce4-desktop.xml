@@ -63,8 +63,8 @@
       <property name="monitorDVI-I-1" type="empty">
         <property name="workspace0" type="empty">
           <property name="color1" type="array">
-            <value type="uint" value="13539"/>
             <value type="uint" value="14348"/>
+            <value type="uint" value="13134"/>
             <value type="uint" value="13134"/>
             <value type="uint" value="65535"/>
           </property>

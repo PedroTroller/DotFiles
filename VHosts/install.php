@@ -53,7 +53,7 @@ $handle = opendir($dir);
 
 while (false !== ($entry = readdir($handle))) {
     if (!in_array($entry, ['.', '..']) && is_dir($dir.$entry)) {
-        $tags = $dir.$entry;
+        $targ = $dir.$entry;
         if (is_dir($dir.$entry.'/web/')) {
             $targ = sprintf('%s/web', $targ);
         }

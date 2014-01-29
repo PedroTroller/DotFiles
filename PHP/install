@@ -1,5 +1,12 @@
 #!/usr/bin/env sh
 
+sudo add-apt-repository ppa:ondrej/php5 -y >> /dev/null
+sudo apt-get update >> /dev/null
+sudo apt-get install php5 -y >> /dev/null
+
+sudo rm -rf /etc/php5/cli/php.ini
+sudo ln -s /etc/php5/apache2/php.ini /etc/php5/cli/php.ini
+    
 sudo ~/Tools/configure /etc/php5/cli/php.ini memory_limit 2048M >> /dev/null
 sudo ~/Tools/configure /etc/php5/cli/php.ini xdebug.max_nesting_level 20000 >> /dev/null
 sudo ~/Tools/configure /etc/php5/cli/php.ini date.timezone "Europe/Paris" >> /dev/null

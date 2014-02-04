@@ -11,6 +11,7 @@
         <value type="int" value="2"/>
         <value type="int" value="1"/>
         <value type="int" value="5"/>
+        <value type="int" value="11"/>
         <value type="int" value="6"/>
         <value type="int" value="7"/>
         <value type="int" value="8"/>
@@ -76,6 +77,7 @@
       <property name="style" type="uint" value="0"/>
       <property name="expand" type="bool" value="true"/>
     </property>
+    <property name="plugin-11" type="string" value="battery"/>
   </property>
   <property name="configver" type="int" value="2"/>
 </channel>

@@ -63,8 +63,8 @@ while (false !== ($entry = readdir($handle))) {
         $content[] = sprintf("\tServerAlias %s.dev\n", $entry);
         $content[] = sprintf("\tDocumentRoot %s\n", $targ);
         $content[] = sprintf("\t<Directory %s>\n", $targ);
-        $content[] = sprintf("\tAllowOverride All\n");
-        $content[] = sprintf("\tRequire all granted\n");
+        $content[] = sprintf("\t\tAllowOverride All\n");
+        $content[] = sprintf("\t\tRequire all granted\n");
         $content[] = sprintf("\t</Directory>\n");
         $content[] = sprintf("</VirtualHost>\n");
     }

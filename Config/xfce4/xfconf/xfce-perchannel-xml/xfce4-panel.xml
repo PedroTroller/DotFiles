@@ -59,7 +59,9 @@
       <property name="expand" type="bool" value="true"/>
     </property>
     <property name="plugin-11" type="string" value="battery"/>
-    <property name="plugin-3" type="string" value="separator"/>
+    <property name="plugin-3" type="string" value="separator">
+      <property name="style" type="uint" value="1"/>
+    </property>
   </property>
   <property name="configver" type="int" value="2"/>
 </channel>

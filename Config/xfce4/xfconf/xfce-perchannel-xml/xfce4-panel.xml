@@ -18,7 +18,7 @@
       </property>
       <property name="background-style" type="uint" value="0"/>
       <property name="background-alpha" type="uint" value="0"/>
-      <property name="size" type="uint" value="25"/>
+      <property name="size" type="uint" value="30"/>
       <property name="autohide" type="bool" value="false"/>
       <property name="length-adjust" type="bool" value="true"/>
       <property name="span-monitors" type="bool" value="true"/>

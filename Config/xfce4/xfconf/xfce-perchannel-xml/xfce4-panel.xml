@@ -33,7 +33,7 @@
       <property name="flat-buttons" type="bool" value="true"/>
       <property name="show-handle" type="bool" value="false"/>
       <property name="show-labels" type="bool" value="false"/>
-      <property name="grouping" type="uint" value="1"/>
+      <property name="grouping" type="uint" value="0"/>
       <property name="show-wireframes" type="bool" value="true"/>
       <property name="switch-workspace-on-unminimize" type="bool" value="false"/>
       <property name="show-only-minimized" type="bool" value="false"/>

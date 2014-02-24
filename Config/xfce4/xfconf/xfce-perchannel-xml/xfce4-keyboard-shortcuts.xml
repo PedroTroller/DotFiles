@@ -52,6 +52,7 @@
       <property name="&lt;Super&gt;p" type="string" value="xfce4-display-settings --minimal"/>
       <property name="override" type="bool" value="true"/>
       <property name="&lt;Super&gt;l" type="string" value="xflock4"/>
+      <property name="&lt;Super&gt;Escape" type="string" value="xfce4-session-logout"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">

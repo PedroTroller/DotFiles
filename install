@@ -10,5 +10,3 @@ sh ~/DotFiles/install_exec
 cd ~ >> /dev/null
 source ~/DotFiles/Symlink/bashrc >> /dev/null
 cd - >> /dev/null
-
-ponysay "That's all dude !"

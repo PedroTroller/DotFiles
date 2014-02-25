@@ -8,7 +8,6 @@ sh ~/DotFiles/Config/install
 sh ~/DotFiles/MysqlServer/install
 sh ~/DotFiles/Apt/install
 sh ~/DotFiles/XFCE/install
-sh ~/DotFiles/PonySay/install
 sh ~/DotFiles/Ruby/install
 sh ~/DotFiles/NodeJs/install
 sh ~/DotFiles/Composer/install

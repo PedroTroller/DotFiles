@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+
+sudo apt-get install phpmyadmin -y
+ln -s -f  /usr/share/phpmyadmin/ ~/Works/phpmyadmin
+
+sudo ~/Tools/configure /etc/phpmyadmin/config.inc.php "\$cfg['Servers'][\$i]['AllowNoPassword']" "true;" >> /dev/null

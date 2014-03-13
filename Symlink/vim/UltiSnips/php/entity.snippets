@@ -7,9 +7,9 @@ use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass="${3:`!v substitute(substitute(expand("%:h"), '\v^\w+\/(\u)', '\1', ''), '\/', '\', 'g')`}\\${2:`!v Filename('', 'myClass')`}Repository")
+ * @ORM\Entity
  */
-class ${2:`!v Filename('', 'myClass')`}
+class ${2:`!v expand("%:t:r")`}
 {
 
     /**

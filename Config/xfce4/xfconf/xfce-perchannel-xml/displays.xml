@@ -5,7 +5,7 @@
     <property name="eDP1" type="string" value="Panasonic Industry Company 12&quot;">
       <property name="Active" type="bool" value="false"/>
       <property name="Resolution" type="string" value="1920x1080"/>
-      <property name="RefreshRate" type="double" value="60.001038"/>
+      <property name="RefreshRate" type="double" value="60.010863"/>
       <property name="Rotation" type="int" value="0"/>
       <property name="Reflection" type="string" value="0"/>
       <property name="Primary" type="bool" value="false"/>

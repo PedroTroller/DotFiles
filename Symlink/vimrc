@@ -89,6 +89,8 @@ autocmd BufEnter    * hi SpellCap    guisp=Orange
 
 " Remove trailing whitespaces and ^M chars
 autocmd FileType php,js,css,html,xml,yaml,vim autocmd BufWritePre <buffer> :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")'))
+" Use the htmljinja syntax for twig files
+au BufNewFile,BufRead *.twig set ft=twig
 
 " Syntastic
 let g:syntastic_enable_signs = 1

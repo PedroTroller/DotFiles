@@ -24,4 +24,5 @@ MiscHighlightUrls=TRUE
 MiscScrollAlternateScreen=TRUE
 TabActivityColor=#262656568080
 BackgroundDarkness=0,800000
+TitleMode=TERMINAL_TITLE_REPLACE
 

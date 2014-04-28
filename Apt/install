@@ -15,5 +15,5 @@ for package in `cat ~/DotFiles/Apt/get`; do
     sudo apt-get install $package -y
 done
 
-sudo apt-get upgrade -y >> /dev/null
-sudo apt-get autoremove -y >> /dev/null
+sudo apt-get upgrade -y 
+sudo apt-get autoremove -y 

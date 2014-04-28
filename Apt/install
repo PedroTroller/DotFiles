@@ -12,7 +12,7 @@ sudo apt-get -f install -y >> /dev/null
 
 for package in `cat ~/DotFiles/Apt/get`; do
     echo INSTALL : $package
-    sudo apt-get install $package -y >> /dev/null
+    sudo apt-get install $package -y
 done
 
 sudo apt-get upgrade -y >> /dev/null

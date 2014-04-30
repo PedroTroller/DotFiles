@@ -9,5 +9,6 @@ tags
 
 ## SYMFONY
 
+behat.yml
 *_local.yml
 parameters.ini

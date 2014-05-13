@@ -7,7 +7,7 @@
   <property name="window" type="empty">
     <property name="width" type="int" value="760"/>
     <property name="height" type="int" value="420"/>
-    <property name="maximized" type="bool" value="false"/>
+    <property name="maximized" type="bool" value="true"/>
   </property>
   <property name="folders" type="empty">
     <property name="last-used-media" type="string" value="/home/pedro/Téléchargements"/>

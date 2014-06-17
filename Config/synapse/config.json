@@ -1,8 +1,28 @@
 {
   "ui" : {
     "global" : {
-      "ui-type" : "default",
+      "ui-type" : "essential",
       "show-indicator" : false
+    }
+  },
+  "data-sink" : {
+    "global" : {
+      "disabled-plugins" : [
+        "SynapseCalculatorPlugin",
+        "SynapseCommandPlugin",
+        "SynapseDesktopFilePlugin",
+        "SynapseDirectoryPlugin",
+        "SynapseHybridSearchPlugin",
+        "SynapseZeitgeistRelated",
+        "SynapseImgUrPlugin",
+        "SynapseLaunchpadPlugin",
+        "SynapseOpenSearchPlugin",
+        "SynapseLocatePlugin",
+        "SynapseSshPlugin",
+        "SynapsePastebinPlugin",
+        "SynapseSelectionPlugin",
+        "SynapseZeitgeistPlugin"
+      ]
     }
   }
 }

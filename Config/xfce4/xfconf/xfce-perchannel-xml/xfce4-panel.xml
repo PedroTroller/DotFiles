@@ -45,6 +45,13 @@
         <value type="string" value="libme.so"/>
         <value type="string" value="libsession.so"/>
       </property>
+      <property name="known-indicators" type="array">
+        <value type="string" value="libapplication.so"/>
+        <value type="string" value="com.canonical.indicator.sound"/>
+        <value type="string" value="com.canonical.indicator.messages"/>
+        <value type="string" value="com.canonical.indicator.power"/>
+        <value type="string" value="libsynapse.so"/>
+      </property>
     </property>
     <property name="plugin-6" type="string" value="separator">
       <property name="style" type="uint" value="0"/>

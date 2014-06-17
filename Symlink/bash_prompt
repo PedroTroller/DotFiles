@@ -14,11 +14,11 @@ LIGHT_GREEN="\[\033[1;32m\]"
 function parse_git_branch {
   git rev-parse --git-dir &> /dev/null
   git_status="$(git status 2> /dev/null)"
-  branch_pattern="^# On branch ([^${IFS}]*)"
-  remote_pattern="# Your branch is (.*) of"
+  branch_pattern="^Sur la branche ([^${IFS}]*)"
+  remote_pattern=" (.*) of"
   diverge_pattern="# Your branch and (.*) have diverged"
   
-  if [[ ! ${git_status}} =~ "working directory clean" ]]; then
+  if [[ ! ${git_status}} =~ "la copie de travail est propre" ]]; then
     state="${RED}⚡"
   fi
   # add an else if or two here if you want to get more specific

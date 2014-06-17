@@ -141,7 +141,7 @@
             <value type="uint" value="4"/>
             <value type="uint" value="65535"/>
           </property>
-          <property name="last-image" type="string" value="/home/pedro/DotFiles/XFCE/backgrounds/9.jpg"/>
+          <property name="last-image" type="string" value="/home/pedro/DotFiles/XFCE/backgrounds/10.jpg"/>
           <property name="image-style" type="int" value="5"/>
           <property name="backdrop-cycle-enable" type="bool" value="true"/>
           <property name="backdrop-cycle-timer" type="uint" value="1"/>
@@ -156,7 +156,7 @@
             <value type="uint" value="4"/>
             <value type="uint" value="65535"/>
           </property>
-          <property name="last-image" type="string" value="/home/pedro/DotFiles/XFCE/backgrounds/1.jpg"/>
+          <property name="last-image" type="string" value="/home/pedro/DotFiles/XFCE/backgrounds/7.jpg"/>
           <property name="image-style" type="int" value="5"/>
           <property name="backdrop-cycle-enable" type="bool" value="true"/>
           <property name="backdrop-cycle-random-order" type="bool" value="true"/>

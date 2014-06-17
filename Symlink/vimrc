@@ -334,3 +334,11 @@ highlight Cursor guifg=white guibg=white
 let g:phpqa_codesniffer_autorun = 0
 
 nmap <F8> :TagbarToggle<CR>
+
+function! OrderNamespace()
+    execute ":! ~/Tools/order_namespace ".@%." %"
+    execute ':e'
+    execute ':set syntax=php'
+endfunction
+
+:autocmd BufWritePost *.php :call OrderNamespace()

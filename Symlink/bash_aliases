@@ -20,6 +20,7 @@ alias gps='git push'
 alias gpu='git pull'
 alias gck='git checkout'
 alias gcl='git clone'
+alias gpurge='git branch --merged master | grep -v master | xargs git branch -d'
 alias log="git log --graph --pretty=format:'%Cred%h %Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
 alias :q="exit"
 alias :e="vim"

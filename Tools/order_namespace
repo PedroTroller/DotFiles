@@ -1,0 +1,46 @@
+#!/usr/bin/php
+
+<?php
+
+list($me, $file) = $argv;
+
+$content = file_get_contents($file);
+$lines = preg_split("/\r?\n/", $content);
+$line = each($lines);
+$uses_lines = [];
+$uses = [];
+$namespace = 0;
+
+while (false !== $line && 0 === preg_match('/\{/', $line['value'])) {
+    $value = $line['value'];
+    $key = $line['key'];
+
+    if (0 !== preg_match('/^use (.*)$/', trim($value))) {
+        $uses_lines[] = $key;
+    }
+
+    if (0 !== preg_match('/^namespace (.*)$/', trim($value))) {
+        $namespace = $key;
+    }
+
+    $line = each($lines);
+}
+
+rsort($uses_lines);
+
+foreach ($uses_lines as $line) {
+    $uses[] = $lines[$line];
+    unset($lines[$line]);
+}
+
+sort($uses);
+
+$cursor = $namespace+2;
+
+$lines = array_merge(
+    array_slice($lines, 0, $cursor),
+    array_unique($uses),
+    array_slice($lines, $cursor)
+);
+
+file_put_contents($file, implode("\n", $lines));

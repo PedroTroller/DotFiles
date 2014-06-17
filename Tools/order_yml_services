@@ -1,0 +1,21 @@
+#!/usr/bin/php
+
+<?php
+
+include(__DIR__ . "/vendor/autoload.php");
+list($me, $file) = $argv;
+
+$data = \Symfony\Component\Yaml\Yaml::parse($file);
+
+$parameters = isset($data['parameters']) ? $data['parameters'] : [];
+$services = isset($data['services']) ? $data['services'] : [];
+
+ksort($parameters);
+ksort($services);
+
+$data['parameters'] = $parameters;
+$data['services'] = $services;
+
+ksort($data);
+
+file_put_contents($file, \Symfony\Component\Yaml\Yaml::dump($data, 4));

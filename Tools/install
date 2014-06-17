@@ -7,3 +7,7 @@ for file in `ls -1 ~/DotFiles/Tools`; do
         chmod +x ~/DotFiles/Tools/$file
     fi
 done
+
+cd ~/DotFiles/Tools
+composer install
+cd - > /dev/null

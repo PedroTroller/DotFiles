@@ -1,0 +1,6 @@
+{
+    "name": "pedrotroller/dotfiles-tools",
+    "require": {
+        "symfony/yaml": "dev-master"
+    }
+}

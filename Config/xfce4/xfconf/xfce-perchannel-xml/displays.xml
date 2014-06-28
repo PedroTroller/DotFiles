@@ -50,7 +50,7 @@
         <property name="Y" type="int" value="0"/>
       </property>
     </property>
-    <property name="HDMI1" type="string" value="HDMI1">
+    <property name="HDMI1" type="string" value="Iiyama North America 24&quot;">
       <property name="Active" type="bool" value="true"/>
       <property name="Resolution" type="string" value="1920x1080"/>
       <property name="RefreshRate" type="double" value="60.000000"/>

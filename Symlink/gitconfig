@@ -6,9 +6,9 @@
 [user]
     email = plazanet.pierre@gmail.com
 [push]
-    default = current
+	default = current
 [pull]
-    default = current
+	default = current
 [init]
     templatedir = ~/.git_template
 [mergetool]

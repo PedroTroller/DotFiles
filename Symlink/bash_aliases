@@ -30,3 +30,4 @@ alias l='ls -CF'
 alias ..="cd .."
 alias .="cd ."
 alias ~="cd ~"
+alias xflock4="i3lock"

@@ -158,10 +158,10 @@
             <value type="uint" value="4"/>
             <value type="uint" value="65535"/>
           </property>
-          <property name="last-image" type="string" value="/home/pedro/DotFiles/XFCE/backgrounds/10.jpg"/>
+          <property name="last-image" type="string" value="/home/pedro/DotFiles/XFCE/backgrounds/1.jpg"/>
           <property name="image-style" type="int" value="5"/>
           <property name="backdrop-cycle-enable" type="bool" value="true"/>
-          <property name="backdrop-cycle-timer" type="uint" value="1"/>
+          <property name="backdrop-cycle-timer" type="uint" value="30"/>
           <property name="backdrop-cycle-random-order" type="bool" value="true"/>
           <property name="color-style" type="int" value="2"/>
           <property name="color2" type="array">
@@ -170,6 +170,7 @@
             <value type="uint" value="0"/>
             <value type="uint" value="65535"/>
           </property>
+          <property name="backdrop-cycle-period" type="int" value="0"/>
         </property>
       </property>
       <property name="monitorHDMI1" type="empty">
@@ -180,7 +181,7 @@
             <value type="uint" value="4"/>
             <value type="uint" value="65535"/>
           </property>
-          <property name="last-image" type="string" value="/home/pedro/DotFiles/XFCE/backgrounds/7.jpg"/>
+          <property name="last-image" type="string" value="/home/pedro/DotFiles/XFCE/backgrounds/6.jpg"/>
           <property name="image-style" type="int" value="5"/>
           <property name="backdrop-cycle-enable" type="bool" value="true"/>
           <property name="backdrop-cycle-random-order" type="bool" value="true"/>
@@ -191,10 +192,16 @@
             <value type="uint" value="0"/>
             <value type="uint" value="65535"/>
           </property>
+          <property name="backdrop-cycle-period" type="int" value="0"/>
+          <property name="backdrop-cycle-timer" type="uint" value="30"/>
         </property>
       </property>
     </property>
     <property name="single-workspace-mode" type="bool" value="true"/>
     <property name="single-workspace-number" type="int" value="0"/>
+  </property>
+  <property name="last" type="empty">
+    <property name="window-width" type="int" value="741"/>
+    <property name="window-height" type="int" value="476"/>
   </property>
 </channel>

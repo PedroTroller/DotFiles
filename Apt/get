@@ -1,7 +1,8 @@
 openssh-server
 curl
 apache2
-php5 php5-intl php5-mongo php5-mysql php5-sqlite php5-imagick php5-curl php5-xdebug php-apc php-pear php5-imap
+php5 php5-intl php5-mongo php5-mysql php5-sqlite php5-imagick php5-curl php5-xdebug php-apc php-pear php5-imap php5-memcached
+memcached
 python
 vim vim-nox meld
 gnome-do

@@ -1,6 +1,16 @@
 #!/usr/bin/php
 <?php
 
+function buildUrl($entry)
+{
+    if (false === strpos($entry, '.')) {
+
+        return sprintf('%s.dev', $entry);
+    }
+
+    return $entry;
+}
+
 $dir = dirname(dirname(__DIR__)) . '/Works/';
 $hosts = '/etc/hosts';
 $sites = '/etc/apache2/sites-available/000-default.conf';
@@ -26,7 +36,7 @@ $handle = opendir($dir);
 
 while (false !== ($entry = readdir($handle))) {
     if (!in_array($entry, ['.', '..']) && is_dir($dir.$entry)) {
-        $str = sprintf("127.0.0.1\t%s.dev\n", strtolower($entry));
+        $str = sprintf("127.0.0.1\t%s\n", strtolower(buildUrl($entry)));
         $content[] = $str;
     }
 }
@@ -59,8 +69,8 @@ while (false !== ($entry = readdir($handle))) {
         }
         $content[] = sprintf("\n");
         $content[] = sprintf("<VirtualHost *:80>\n");
-        $content[] = sprintf("\tServerName %s.dev\n", strtolower($entry));
-        $content[] = sprintf("\tServerAlias %s.dev\n", $entry);
+        $content[] = sprintf("\tServerName %s\n", strtolower(buildUrl($entry)));
+        $content[] = sprintf("\tServerAlias %s\n", buildUrl($entry));
         $content[] = sprintf("\tDocumentRoot %s\n", $targ);
         $content[] = sprintf("\t<Directory %s>\n", $targ);
         $content[] = sprintf("\t\tAllowOverride All\n");

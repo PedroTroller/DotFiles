@@ -4,20 +4,18 @@
   <property name="panels" type="array">
     <value type="int" value="0"/>
     <property name="panel-0" type="empty">
-      <property name="position" type="string" value="p=8;x=326;y=1060"/>
-      <property name="length" type="uint" value="100"/>
+      <property name="position" type="string" value="p=4;x=1784;y=2137"/>
+      <property name="length" type="uint" value="1"/>
       <property name="position-locked" type="bool" value="true"/>
       <property name="plugin-ids" type="array">
-        <value type="int" value="2"/>
-        <value type="int" value="1"/>
         <value type="int" value="11"/>
         <value type="int" value="5"/>
         <value type="int" value="6"/>
         <value type="int" value="7"/>
         <value type="int" value="3"/>
       </property>
-      <property name="background-style" type="uint" value="0"/>
-      <property name="background-alpha" type="uint" value="0"/>
+      <property name="background-style" type="uint" value="1"/>
+      <property name="background-alpha" type="uint" value="50"/>
       <property name="size" type="uint" value="25"/>
       <property name="autohide" type="bool" value="false"/>
       <property name="length-adjust" type="bool" value="true"/>
@@ -25,19 +23,16 @@
       <property name="enter-opacity" type="uint" value="100"/>
       <property name="leave-opacity" type="uint" value="100"/>
       <property name="mode" type="uint" value="0"/>
-      <property name="disable-struts" type="bool" value="false"/>
+      <property name="disable-struts" type="bool" value="true"/>
+      <property name="background-color" type="array">
+        <value type="uint" value="15855"/>
+        <value type="uint" value="15855"/>
+        <value type="uint" value="15855"/>
+        <value type="uint" value="65535"/>
+      </property>
     </property>
   </property>
   <property name="plugins" type="empty">
-    <property name="plugin-2" type="string" value="tasklist">
-      <property name="flat-buttons" type="bool" value="true"/>
-      <property name="show-handle" type="bool" value="false"/>
-      <property name="show-labels" type="bool" value="false"/>
-      <property name="grouping" type="uint" value="0"/>
-      <property name="show-wireframes" type="bool" value="true"/>
-      <property name="switch-workspace-on-unminimize" type="bool" value="false"/>
-      <property name="show-only-minimized" type="bool" value="false"/>
-    </property>
     <property name="plugin-5" type="string" value="indicator">
       <property name="blacklist" type="array">
         <value type="string" value="libme.so"/>
@@ -62,10 +57,6 @@
       <property name="digital-format" type="string" value="%H:%M"/>
       <property name="mode" type="uint" value="2"/>
       <property name="show-frame" type="bool" value="true"/>
-    </property>
-    <property name="plugin-1" type="string" value="separator">
-      <property name="style" type="uint" value="0"/>
-      <property name="expand" type="bool" value="true"/>
     </property>
     <property name="plugin-11" type="string" value="battery"/>
     <property name="plugin-3" type="string" value="separator">

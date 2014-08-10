@@ -1,21 +1,79 @@
 #!/usr/bin/php
-
 <?php
 
-include(__DIR__ . "/vendor/autoload.php");
 list($me, $file) = $argv;
 
-$data = \Symfony\Component\Yaml\Yaml::parse($file);
+$content = file_get_contents($file);
+$content = str_replace("\t", "    ", $content);
+$content = explode("\n", $content);
+$indent  = [];
 
-$parameters = isset($data['parameters']) ? $data['parameters'] : [];
-$services = isset($data['services']) ? $data['services'] : [];
+foreach ($content as $line) {
+    $indent[] = countSpaces($line);
+}
 
-ksort($parameters);
-ksort($services);
+$indent = array_unique($indent);
+sort($indent);
 
-$data['parameters'] = $parameters;
-$data['services'] = $services;
+if (2 > count($indent)) {
 
-ksort($data);
+    exit;
+}
 
-file_put_contents($file, \Symfony\Component\Yaml\Yaml::dump($data, 4));
+$structure = [];
+$base = '';
+$current = '';
+
+foreach ($content as $line) {
+    if (empty(trim($line))) {
+
+        continue;
+    }
+    switch (countSpaces($line)) {
+        case $indent[0]:
+            $base = $line;
+            $structure[$base] = [];
+            break;
+        case $indent[1]:
+            $current = $line;
+            $structure[$base][$current] = [];
+            break;
+        default:
+            $structure[$base][$current][] = $line;
+            break;
+    }
+}
+
+foreach($structure as $name => $content) {
+    $a = $content;
+    ksort($a);
+    $structure[$name] = $a;
+}
+
+$content = '';
+
+foreach ($structure as $name => $elements) {
+    $content .= empty($content) ? '' : "\n";
+    $content .= $name . "\n";
+
+    foreach ($elements as $key => $values) {
+        $content .= $key . "\n";
+        foreach ($values as $value) {
+            $content .= $value . "\n";
+        }
+        $content .= empty($values) ? '' : "\n";
+    }
+}
+
+file_put_contents($file, $content);
+
+function countSpaces($str)
+{
+    $cpt = 0;
+    while (!empty($str) && ' ' === substr($str, 0, 1)) {
+        $cpt++;
+        $str = substr($str, 1);
+    }
+
+    return $cpt;
+}

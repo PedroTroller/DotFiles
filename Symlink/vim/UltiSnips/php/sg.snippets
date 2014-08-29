@@ -1,9 +1,7 @@
 snippet sg
-${1:private} $${2};
-
 public function get${2/\w+\s*/\u$0/}()
 {
-    return $this->$2;
+    return $this->${2};
 }
 
 public function set${2/\w+\s*/\u$0/}($$2)

@@ -2,9 +2,9 @@
 ColorForeground=#b3b3b3b3b3b3
 ColorBackground=#133319992666
 ColorCursor=#0f0f49499999
-ColorSelection=#16163b3b5959
+ColorSelection=#4a524a524a52
 ColorSelectionUseDefault=FALSE
-FontName=Droid Sans Mono for Powerline 8
+FontName=Droid Sans Mono for Powerline 9
 MiscAlwaysShowTabs=FALSE
 MiscBell=FALSE
 MiscBordersDefault=TRUE
@@ -23,6 +23,8 @@ MiscTabPosition=GTK_POS_TOP
 MiscHighlightUrls=TRUE
 MiscScrollAlternateScreen=TRUE
 TabActivityColor=#262656568080
-BackgroundDarkness=0,800000
-TitleMode=TERMINAL_TITLE_REPLACE
+BackgroundDarkness=0,950000
+TitleMode=TERMINAL_TITLE_HIDE
+TitleInitial=
+BackgroundMode=TERMINAL_BACKGROUND_TRANSPARENT
 

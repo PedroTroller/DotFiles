@@ -353,7 +353,7 @@ endfunction
 
 autocmd FileType yaml :nmap <silent> <leader>ao :call OrderYmlServices()<CR>
 
-nmap <buffer> <leader>sp :execute ":! cowsay ".@%." && phpspec run ".@%<CR>
+nmap <buffer> <leader>sp :execute ":! cowsay ".@%." && phpspec run ".@%." -fpretty"<CR>
 
 inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a
 
@@ -367,6 +367,13 @@ function! s:align()
         call search(repeat('[^|]*|',column).'\s\{-\}'.repeat('.',position),'ce',line('.'))
     endif
 endfunction
+
+function! s:myGrep(str)
+    execute ":grep -ri ./ ".str
+    execute ":cw"
+endfunction
+
+command! -nargs=1 Gp call s:myGrep(<f-args>)
 
 nmap <Leader>a= :Tabularize /=<CR>
 vmap <Leader>a= :Tabularize /=<CR>

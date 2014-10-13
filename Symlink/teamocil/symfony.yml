@@ -1,46 +1,23 @@
-session:
-    name: <%= File.basename(Dir.getwd) %>
-    windows:
-        -
-            cmd_separator: "\n"
-            with_env_var: false
-            name: editor
-            splits:
-                - { cmd: vim }
-        -
-            cmd_separator: "\n"
-            with_env_var: false
-            name: shell
-            filters:
-                before: clear
-            splits:
-                -
-                    cmd:
-                        - tmux select-window -t editor
-                        - clear
-                    focus: true
-                -
-                    cmd:
-                        - 'if [ ! -f app/logs/dev.log ]; then touch app/logs/dev.log ; fi'
-                        - tail -f app/logs/dev.log app/logs/test.log
-                    width: 30
-                -
-                    cmd:
-                        - tailf /var/log/apache2/error.log
-                    height: 50
-        -
-            cmd_separator: "\n"
-            with_env_var: false
-            name: tools
-            filters:
-                before: clear
-            splits:
-                -
-                    cmd:
-                        - 'if [ ! -f pear.tags ]; then ctags -R -f pear.tags /usr/share/pear ; fi'
-                        - ~/DotFiles/Guard/install
-                        - guard
-                -
-                    cmd:
-                        - selenium
-                    width: 50
+windows:
+  - name: editor
+    panes:
+      - vim
+  - name: shell
+    layout: main-vertical
+    panes:
+      - commands:
+        - tmux select-window -t editor
+        - clear
+      - commands:
+        - 'if [ ! -f app/logs/dev.log ]; then touch app/logs/dev.log ; fi'
+        - tail -f app/logs/dev.log app/logs/test.log
+      - commands:
+        - tailf /var/log/apache2/error.log
+  - name: tools
+    panes:
+      - commands:
+        - 'if [ ! -f pear.tags ]; then ctags -R -f pear.tags /usr/share/pear ; fi'
+        - ~/DotFiles/Guard/install
+        - guard
+      - commands:
+        - phantomjs --webdriver=4444

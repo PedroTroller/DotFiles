@@ -50,8 +50,8 @@
         <property name="Y" type="int" value="0"/>
       </property>
     </property>
-    <property name="HDMI1" type="string" value="2. Samsung Electric Company 65&quot;">
-      <property name="Active" type="bool" value="false"/>
+    <property name="HDMI1" type="string" value="2. CHR 40&quot;">
+      <property name="Active" type="bool" value="true"/>
       <property name="Resolution" type="string" value="1680x1050"/>
       <property name="RefreshRate" type="double" value="59.883253"/>
       <property name="Rotation" type="int" value="0"/>

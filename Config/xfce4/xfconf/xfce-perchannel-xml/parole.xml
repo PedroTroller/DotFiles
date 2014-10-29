@@ -6,10 +6,10 @@
   </property>
   <property name="window" type="empty">
     <property name="width" type="int" value="1920"/>
-    <property name="height" type="int" value="1025"/>
+    <property name="height" type="int" value="1056"/>
     <property name="maximized" type="bool" value="true"/>
   </property>
   <property name="folders" type="empty">
-    <property name="last-used-media" type="string" value="/home/pedro/Téléchargements"/>
+    <property name="last-used-media" type="string" value="/home/pedro/Images/Camera"/>
   </property>
 </channel>

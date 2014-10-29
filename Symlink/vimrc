@@ -381,3 +381,8 @@ nmap <Leader>a: :Tabularize /: \zs<CR>
 vmap <Leader>a: :Tabularize /: \zs<CR>
 nmap <Leader>a, :Tabularize /, \zs<CR>
 vmap <Leader>a, :Tabularize /, \zs<CR>
+
+command! Oui : ! cvlc ~/Tools/oui.mp3 vlc://quit --play-and-exit /<cword>
+command! Jregrette : ! cvlc ~/Tools/Jregrette.mp3 vlc://quit --play-and-exit /<cword>
+map <Leader>lp :Oui<CR>
+map <Leader>jr :Jregrette<CR>

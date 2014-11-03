@@ -353,7 +353,7 @@ endfunction
 
 autocmd FileType yaml :nmap <silent> <leader>ao :call OrderYmlServices()<CR>
 
-nmap <buffer> <leader>sp :execute ":! cowsay ".@%." && phpspec run ".@%." -fpretty"<CR>
+map <buffer> <leader>sp :execute ":! cowsay ".@%." && phpspec run ".@%." -fpretty"<CR>
 
 inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a
 
@@ -384,5 +384,9 @@ vmap <Leader>a, :Tabularize /, \zs<CR>
 
 command! Oui : ! cvlc ~/Tools/oui.mp3 vlc://quit --play-and-exit /<cword>
 command! Jregrette : ! cvlc ~/Tools/Jregrette.mp3 vlc://quit --play-and-exit /<cword>
+command! Internet : ! cvlc ~/Tools/internet.mp3 vlc://quit --play-and-exit /<cword>
+command! Dance : ! cvlc ~/Tools/dance.mp3 vlc://quit --play-and-exit /<cword>
 map <Leader>lp :Oui<CR>
 map <Leader>jr :Jregrette<CR>
+map <Leader>in :Internet<CR>
+map <Leader>dn :Dance<CR>

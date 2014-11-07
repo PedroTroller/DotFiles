@@ -158,7 +158,7 @@
             <value type="uint" value="4"/>
             <value type="uint" value="65535"/>
           </property>
-          <property name="last-image" type="string" value="/home/pedro/DotFiles/XFCE/backgrounds/2.jpg"/>
+          <property name="last-image" type="string" value="/home/pedro/DotFiles/XFCE/backgrounds/4.jpg"/>
           <property name="image-style" type="int" value="5"/>
           <property name="backdrop-cycle-enable" type="bool" value="true"/>
           <property name="backdrop-cycle-timer" type="uint" value="30"/>

@@ -382,11 +382,13 @@ vmap <Leader>a: :Tabularize /: \zs<CR>
 nmap <Leader>a, :Tabularize /, \zs<CR>
 vmap <Leader>a, :Tabularize /, \zs<CR>
 
-command! Oui : ! cvlc ~/Tools/oui.mp3 vlc://quit --play-and-exit /<cword>
-command! Jregrette : ! cvlc ~/Tools/Jregrette.mp3 vlc://quit --play-and-exit /<cword>
-command! Internet : ! cvlc ~/Tools/internet.mp3 vlc://quit --play-and-exit /<cword>
-command! Dance : ! cvlc ~/Tools/dance.mp3 vlc://quit --play-and-exit /<cword>
+command! Oui : ! cvlc ~/.sample/Oui.mp3 vlc://quit --play-and-exit /<cword>
+command! Jregrette : ! cvlc ~/.sample/Jregrette.mp3 vlc://quit --play-and-exit /<cword>
+command! Internet : ! cvlc ~/.sample/Internet.mp3 vlc://quit --play-and-exit /<cword>
+command! Dance : ! cvlc ~/.sample/Dance.mp3 vlc://quit --play-and-exit /<cword>
+command! Moto : ! cvlc ~/.sample/Moto.mp3 vlc://quit --play-and-exit /<cword>
 map <Leader>lp :Oui<CR>
 map <Leader>jr :Jregrette<CR>
 map <Leader>in :Internet<CR>
 map <Leader>dn :Dance<CR>
+map <Leader>mt :Moto<CR>

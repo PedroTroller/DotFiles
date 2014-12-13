@@ -3,11 +3,12 @@ windows:
     panes:
       - vim
   - name: shell
-    layout: main-vertical
     panes:
       - commands:
           - tmux select-window -t editor
           - clear
+  - name: guard
+    panes:
       - commands:
           - 'if [ ! -f pear.tags ]; then ctags -R -f pear.tags /usr/share/pear ; fi'
           - ~/DotFiles/Guard/install

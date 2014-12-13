@@ -10,6 +10,6 @@
     <property name="maximized" type="bool" value="true"/>
   </property>
   <property name="folders" type="empty">
-    <property name="last-used-media" type="string" value="/home/pedro/Images/Camera"/>
+    <property name="last-used-media" type="string" value="/home/pedro/.cache/.fr-7mTTSn"/>
   </property>
 </channel>

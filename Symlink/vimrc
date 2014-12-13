@@ -20,7 +20,7 @@ set expandtab
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
-set autoindent
+set autoindent shiftwidth=4 softtabstop=4 tabstop=4 expandtab
 set smartindent
 set list
 set listchars=eol:↩,trail:‧,tab:>⁙
@@ -353,7 +353,7 @@ endfunction
 
 autocmd FileType yaml :nmap <silent> <leader>ao :call OrderYmlServices()<CR>
 
-map <buffer> <leader>sp :execute ":! cowsay ".@%." && phpspec run ".@%." -fpretty"<CR>
+map <leader>sp :execute ":! cowsay ".@%." && phpspec run ".@%." -fpretty"<CR>
 
 inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a
 
@@ -377,6 +377,8 @@ command! -nargs=1 Gp call s:myGrep(<f-args>)
 
 nmap <Leader>a= :Tabularize /=<CR>
 vmap <Leader>a= :Tabularize /=<CR>
+nmap <Leader>a=> :Tabularize /=><CR>
+vmap <Leader>a=> :Tabularize /=><CR>
 nmap <Leader>a: :Tabularize /: \zs<CR>
 vmap <Leader>a: :Tabularize /: \zs<CR>
 nmap <Leader>a, :Tabularize /, \zs<CR>
@@ -387,8 +389,10 @@ command! Jregrette : ! cvlc ~/.sample/Jregrette.mp3 vlc://quit --play-and-exit /
 command! Internet : ! cvlc ~/.sample/Internet.mp3 vlc://quit --play-and-exit /<cword>
 command! Dance : ! cvlc ~/.sample/Dance.mp3 vlc://quit --play-and-exit /<cword>
 command! Moto : ! cvlc ~/.sample/Moto.mp3 vlc://quit --play-and-exit /<cword>
+command! MyMind : ! cvlc ~/.sample/MyMindTellMeNo.mp3 vlc://quit --play-and-exit /<cword>
 map <Leader>lp :Oui<CR>
 map <Leader>jr :Jregrette<CR>
 map <Leader>in :Internet<CR>
 map <Leader>dn :Dance<CR>
 map <Leader>mt :Moto<CR>
+map <Leader>mm :MyMind<CR>

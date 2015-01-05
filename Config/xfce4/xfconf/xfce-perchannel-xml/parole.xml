@@ -7,9 +7,15 @@
   <property name="window" type="empty">
     <property name="width" type="int" value="1920"/>
     <property name="height" type="int" value="1056"/>
-    <property name="maximized" type="bool" value="true"/>
+    <property name="maximized" type="bool" value="false"/>
   </property>
   <property name="folders" type="empty">
-    <property name="last-used-media" type="string" value="/home/pedro/.cache/.fr-7mTTSn"/>
+    <property name="last-used-media" type="string" value="/media/pedro/EC16-CCFD"/>
+  </property>
+  <property name="playlist" type="empty">
+    <property name="show-playlist" type="bool" value="false"/>
+  </property>
+  <property name="audio" type="empty">
+    <property name="volume" type="int" value="100"/>
   </property>
 </channel>

@@ -135,3 +135,5 @@ export PATH=$PATH:./bin/
 export PATH=$PATH:~/Tools/
 
 [[ $TERM != "screen" ]] && exec tmux -2
+
+source /etc/bash_completion.d/docker.io

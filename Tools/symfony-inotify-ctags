@@ -1,0 +1,9 @@
+#!/bin/bash
+while file=$(inotifywait -r -e modify -e delete -e create -e move --format "%w%f" ./); do
+    EXT=${file##*.}
+    if [ $EXT = "php" ]
+    then
+        ctags -R ./src app/AppKernel.php ./vendor ./features ./spec --languages=php
+        echo "Done..."
+    fi
+done

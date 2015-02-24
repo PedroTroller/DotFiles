@@ -23,7 +23,7 @@
     </property>
   </property>
   <property name="splash" type="empty">
-    <property name="Engine" type="string" value="balou"/>
+    <property name="Engine" type="empty"/>
   </property>
   <property name="compat" type="empty">
     <property name="LaunchGNOME" type="empty"/>
@@ -32,5 +32,8 @@
     <property name="screensaver" type="empty">
       <property name="type" type="empty"/>
     </property>
+  </property>
+  <property name="shutdown" type="empty">
+    <property name="LockScreen" type="bool" value="false"/>
   </property>
 </channel>

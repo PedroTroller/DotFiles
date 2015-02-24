@@ -1,8 +1,7 @@
 favorites=exo-web-browser.desktop,exo-mail-reader.desktop,exo-file-manager.desktop,abiword.desktop,gnumeric.desktop,pidgin.desktop,gmusicbrowser.desktop,ubuntu-software-center.desktop,exo-terminal-emulator.desktop,xfhelp4.desktop
-recent=gnome-do.desktop,xfce-mouse-settings.desktop,xfce4-power-manager-settings.desktop,light-locker-settings.desktop,xfce-display-settings.desktop,gigolo.desktop,launchy.desktop,google-chrome.desktop,exo-terminal-emulator.desktop
+recent=exo-terminal-emulator.desktop,exo-file-manager.desktop,google-chrome.desktop,firefox.desktop
 button-title=Applications Menu
 button-icon=xubuntu-logo-menu
-button-single-row=false
 show-button-title=false
 show-button-icon=true
 launcher-show-name=true
@@ -15,7 +14,6 @@ favorites-in-recent=true
 display-recent-default=false
 position-search-alternate=true
 position-commands-alternate=false
-position-categories-alternate=false
 menu-width=400
 menu-height=500
 command-settings=xfce4-settings-manager
@@ -37,7 +35,7 @@ command=exo-open --launch TerminalEmulator man %s
 regex=false
 
 [action1]
-name=Wikipédia
+name=Wikipedia
 pattern=!w
 command=exo-open --launch WebBrowser http://en.wikipedia.org/wiki/%u
 regex=false

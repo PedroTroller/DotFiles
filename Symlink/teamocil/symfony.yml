@@ -3,11 +3,13 @@ windows:
     panes:
       - vim
   - name: shell
-    layout: main-vertical
     panes:
       - commands:
         - tmux select-window -t editor
         - clear
+  - name: logs
+    layout: main-vertical
+    panes:
       - commands:
         - 'if [ ! -f app/logs/dev.log ]; then touch app/logs/dev.log ; fi'
         - tail -f app/logs/dev.log app/logs/test.log
@@ -16,8 +18,6 @@ windows:
   - name: tools
     panes:
       - commands:
-        - 'if [ ! -f pear.tags ]; then ctags -R -f pear.tags /usr/share/pear ; fi'
-        - ~/DotFiles/Guard/install
-        - guard
+        - ~/Tools/symfony-inotify-ctags
       - commands:
         - phantomjs --webdriver=4444

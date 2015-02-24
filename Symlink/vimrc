@@ -91,6 +91,7 @@ autocmd BufEnter    * hi SpellCap    guisp=Orange
 autocmd FileType php,js,css,html,xml,yaml,vim autocmd BufWritePre <buffer> :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")'))
 " Use the htmljinja syntax for twig files
 au BufNewFile,BufRead *.twig set ft=twig
+au BufNewFile,BufRead *.twig set syntax=htmljinja
 
 nmap bns :call PhpExpandClass()<CR>
 
@@ -281,7 +282,7 @@ let g:ctrlp_cmd = 'CtrlPMRU'
 let g:ctrlp_match_window_bottom = 0
 
 " PHPCS
-let &colorcolumn = join(range(81,999),",")
+let &colorcolumn = join(range(80,120),",")
 
 autocmd BufWrite * :call <SID>MkdirsIfNotExists(expand('<afile>:h'))
 
@@ -390,9 +391,17 @@ command! Internet : ! cvlc ~/.sample/Internet.mp3 vlc://quit --play-and-exit /<c
 command! Dance : ! cvlc ~/.sample/Dance.mp3 vlc://quit --play-and-exit /<cword>
 command! Moto : ! cvlc ~/.sample/Moto.mp3 vlc://quit --play-and-exit /<cword>
 command! MyMind : ! cvlc ~/.sample/MyMindTellMeNo.mp3 vlc://quit --play-and-exit /<cword>
+command! Gogole : ! cvlc ~/.sample/Gogole.mp3 vlc://quit --play-and-exit /<cword>
+command! Nein : ! cvlc ~/.sample/Nein.mp3 vlc://quit --play-and-exit /<cword>
+command! Yeah : ! cvlc ~/.sample/Yeah.mp3 vlc://quit --play-and-exit /<cword>
+
 map <Leader>lp :Oui<CR>
 map <Leader>jr :Jregrette<CR>
 map <Leader>in :Internet<CR>
 map <Leader>dn :Dance<CR>
 map <Leader>mt :Moto<CR>
 map <Leader>mm :MyMind<CR>
+map <Leader>go :Gogole<CR>
+map <Leader>gg :Gogole<CR>
+map <Leader>nn :Nein<CR>
+map <Leader>ya :Yeah<CR>

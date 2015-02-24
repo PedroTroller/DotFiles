@@ -1,0 +1,4 @@
+[Desktop Entry]
+Name=Économiseur d'écran
+Comment=Définir le délai de lancement de l'économiseur d'écran
+Exec=xset s 0 dpms 0 0 0

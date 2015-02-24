@@ -6,11 +6,11 @@
   </property>
   <property name="window" type="empty">
     <property name="width" type="int" value="1920"/>
-    <property name="height" type="int" value="1056"/>
-    <property name="maximized" type="bool" value="false"/>
+    <property name="height" type="int" value="1058"/>
+    <property name="maximized" type="bool" value="true"/>
   </property>
   <property name="folders" type="empty">
-    <property name="last-used-media" type="string" value="/media/pedro/EC16-CCFD"/>
+    <property name="last-used-media" type="string" value="/home/pedro/Téléchargements"/>
   </property>
   <property name="playlist" type="empty">
     <property name="show-playlist" type="bool" value="false"/>

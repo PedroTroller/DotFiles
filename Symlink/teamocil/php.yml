@@ -10,6 +10,4 @@ windows:
   - name: guard
     panes:
       - commands:
-          - 'if [ ! -f pear.tags ]; then ctags -R -f pear.tags /usr/share/pear ; fi'
-          - ~/DotFiles/Guard/install
-          - guard
+        - ~/Tools/symfony-inotify-ctags

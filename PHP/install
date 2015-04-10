@@ -5,7 +5,7 @@ sudo apt-get update
 sudo apt-get install php5 -y
 
 sudo rm -rf /etc/php5/cli/php.ini
-sudo ln -s /etc/php5/apache2/php.ini /etc/php5/cli/php.ini
+sudo cp /etc/php5/apache2/php.ini /etc/php5/cli/php.ini -f
     
 sudo ~/Tools/configure /etc/php5/cli/php.ini memory_limit 2048M >> /dev/null
 sudo ~/Tools/configure /etc/php5/cli/php.ini xdebug.max_nesting_level 20000 >> /dev/null

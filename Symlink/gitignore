@@ -14,3 +14,8 @@ cscope.files
 behat.yml
 *_local.yml
 parameters.ini
+
+##NODE
+
+node_modules
+npm-debug.log

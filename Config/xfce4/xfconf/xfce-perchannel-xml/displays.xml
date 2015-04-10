@@ -8,7 +8,7 @@
       <property name="RefreshRate" type="double" value="60.010863"/>
       <property name="Rotation" type="int" value="0"/>
       <property name="Reflection" type="string" value="0"/>
-      <property name="Primary" type="bool" value="false"/>
+      <property name="Primary" type="bool" value="true"/>
       <property name="Position" type="empty">
         <property name="X" type="int" value="0"/>
         <property name="Y" type="int" value="1080"/>
@@ -27,4 +27,5 @@
       </property>
     </property>
   </property>
+  <property name="Notify" type="bool" value="true"/>
 </channel>

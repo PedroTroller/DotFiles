@@ -9,7 +9,7 @@ gnome-do
 python-pip
 git tig
 inotify-tools
-ruby ruby-dev libinotify-ruby
+ruby2.0-dev libinotify-ruby
 exuberant-ctags
 tmux
 gparted

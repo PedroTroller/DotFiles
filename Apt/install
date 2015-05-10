@@ -1,6 +1,7 @@
 #!/usr/bin/env sh
 
 sudo apt-get install python-software-properties -y >> /dev/null
+sudo add-apt-repository ppa:brightbox/ruby-ng-experimental -y
 
 for ppa in `cat ~/DotFiles/Apt/ppa`; do
     echo ADD PPA : $ppa

@@ -18,6 +18,6 @@ windows:
   - name: tools
     panes:
       - commands:
-        - ~/Tools/symfony-inotify-ctags
+          - ~/Tools/ctags-watch
       - commands:
         - phantomjs --webdriver=4444

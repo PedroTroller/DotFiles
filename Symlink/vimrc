@@ -354,6 +354,14 @@ endfunction
 
 autocmd FileType yaml :nmap <silent> <leader>ao :call OrderYmlServices()<CR>
 
+function! OrderYmlTranslations()
+    execute ":! ~/Tools/order_yml_translations ".@%." %"
+    execute ':e'
+    execute ':set syntax=yaml'
+endfunction
+
+autocmd FileType yaml :nmap <silent> <leader>at :call OrderYmlTranslations()<CR>
+
 map <leader>sp :execute ":! cowsay ".@%." && phpspec run ".@%." -fpretty"<CR>
 
 inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a

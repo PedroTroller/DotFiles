@@ -1,4 +1,5 @@
 #!/bin/bash
+
 while file=$(inotifywait -r -e modify -e delete -e create -e move --format "%w%f" ./); do
     EXT=${file##*.}
     if [ $EXT = "php" ]

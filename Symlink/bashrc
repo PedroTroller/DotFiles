@@ -137,3 +137,6 @@ export PATH=$PATH:~/Tools/
 [[ $TERM != "screen" ]] && exec tmux -2
 
 source /etc/bash_completion.d/docker.io
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"

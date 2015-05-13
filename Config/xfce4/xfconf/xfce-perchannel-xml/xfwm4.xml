@@ -82,5 +82,6 @@
     <property name="titleless_maximize" type="bool" value="false"/>
     <property name="cycle_preview" type="bool" value="true"/>
     <property name="zoom_desktop" type="bool" value="true"/>
+    <property name="horiz_scroll_opacity" type="bool" value="false"/>
   </property>
 </channel>

@@ -10,4 +10,4 @@ windows:
   - name: guard
     panes:
       - commands:
-        - ~/Tools/symfony-inotify-ctags
+        - ~/Tools/ctags-watch

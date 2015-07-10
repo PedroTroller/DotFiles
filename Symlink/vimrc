@@ -406,6 +406,7 @@ command! Gogole : ! cvlc ~/.sample/Gogole.mp3 vlc://quit --play-and-exit /<cword
 command! Nein : ! cvlc ~/.sample/Nein.mp3 vlc://quit --play-and-exit /<cword>
 command! Yeah : ! cvlc ~/.sample/Yeah.mp3 vlc://quit --play-and-exit /<cword>
 command! PD : ! cvlc ~/.sample/PD.mp3 vlc://quit --play-and-exit /<cword>
+command! Rythm : ! cvlc ~/.sample/Rythm.mp3 vlc://quit --play-and-exit /<cword>
 
 map <Leader>lp :Oui<CR>
 map <Leader>jr :Jregrette<CR>
@@ -418,3 +419,4 @@ map <Leader>gg :Gogole<CR>
 map <Leader>nn :Nein<CR>
 map <Leader>ya :Yeah<CR>
 map <Leader>pd :PD<CR>
+map <Leader>mz :Rythm<CR>

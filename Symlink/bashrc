@@ -139,3 +139,6 @@ export PATH=$PATH:./node_modules/.bin/
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+# added by travis gem
+[ -f /home/pedro/.travis/travis.sh ] && source /home/pedro/.travis/travis.sh

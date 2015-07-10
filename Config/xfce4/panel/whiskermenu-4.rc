@@ -1,5 +1,5 @@
 favorites=exo-web-browser.desktop,exo-mail-reader.desktop,exo-file-manager.desktop,abiword.desktop,gnumeric.desktop,pidgin.desktop,gmusicbrowser.desktop,ubuntu-software-center.desktop,exo-terminal-emulator.desktop,xfhelp4.desktop
-recent=gnome-do.desktop,wine-browsedrive.desktop,wine-Programs-SketchUp 2015-SketchUp.desktop,kde4-konqbrowser.desktop,xfce-mouse-settings.desktop,xfce4-power-manager-settings.desktop,light-locker-settings.desktop,xfce-display-settings.desktop,gigolo.desktop,launchy.desktop
+recent=exo-terminal-emulator.desktop,exo-file-manager.desktop,gnome-do.desktop,skype.desktop,mousepad.desktop,wine-browsedrive.desktop,wine-Programs-SketchUp 2015-SketchUp.desktop,kde4-konqbrowser.desktop,xfce-mouse-settings.desktop,xfce4-power-manager-settings.desktop
 button-title=Applications Menu
 button-icon=xubuntu-logo-menu
 button-single-row=false
@@ -11,6 +11,7 @@ item-icon-size=1
 hover-switch-category=false
 category-icon-size=0
 load-hierarchy=true
+recent-items-max=10
 favorites-in-recent=true
 display-recent-default=false
 position-search-alternate=true
@@ -18,6 +19,7 @@ position-commands-alternate=false
 position-categories-alternate=false
 menu-width=400
 menu-height=500
+menu-opacity=100
 command-settings=xfce4-settings-manager
 show-command-settings=true
 command-lockscreen=xflock4
@@ -28,6 +30,8 @@ command-logout=xfce4-session-logout
 show-command-logout=true
 command-menueditor=menulibre
 show-command-menueditor=true
+command-profile=mugshot
+show-command-profile=true
 search-actions=4
 
 [action0]

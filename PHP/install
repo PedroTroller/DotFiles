@@ -7,6 +7,8 @@ sudo apt-get install php5 -y
 sudo cp /etc/php5/cli/php.ini /etc/php5/apache2/php.ini -f
     
 sudo ~/Tools/configure /etc/php5/cli/php.ini memory_limit 2048M >> /dev/null
+sudo ~/Tools/configure /etc/php5/cli/php.ini post_max_size 20M >> /dev/null
+sudo ~/Tools/configure /etc/php5/cli/php.ini upload_max_filesize 20M >> /dev/null
 sudo ~/Tools/configure /etc/php5/cli/php.ini xdebug.max_nesting_level 20000 >> /dev/null
 sudo ~/Tools/configure /etc/php5/cli/php.ini date.timezone "Europe/Paris" >> /dev/null
 sudo ~/Tools/configure /etc/php5/cli/php.ini short_open_tag Off >> /dev/null

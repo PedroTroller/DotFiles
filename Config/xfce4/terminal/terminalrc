@@ -26,5 +26,4 @@ TabActivityColor=#262656568080
 BackgroundDarkness=0,950000
 TitleMode=TERMINAL_TITLE_HIDE
 TitleInitial=
-BackgroundMode=TERMINAL_BACKGROUND_TRANSPARENT
 

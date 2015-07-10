@@ -5,9 +5,9 @@ cd ~/Tools >> /dev/null
 sudo rm /usr/bin/btsync -f
 
 if [ `getconf LONG_BIT` = "64" ]; then
-    wget http://download-lb.utorrent.com/endpoint/btsync/os/linux-x64/track/stable --output-document=btsync.tar.gz >> /dev/null
+    wget https://download-cdn.getsyncapp.com/stable/linux-x64/BitTorrent-Sync_x64.tar.gz --output-document=btsync.tar.gz >> /dev/null
 else
-    wget http://download-lb.utorrent.com/endpoint/btsync/os/linux-i386/track/stable --output-document=btsync.tar.gz >> /dev/null
+    wget https://download-cdn.getsyncapp.com/stable/linux-i386/BitTorrent-Sync_i386.tar.gz --output-document=btsync.tar.gz >> /dev/null
 fi
 
 tar -zxvf btsync.tar.gz >> /dev/null

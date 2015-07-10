@@ -9,8 +9,6 @@
 	default = current
 [pull]
 	default = current
-[init]
-    templatedir = ~/.git_template
 [mergetool]
 	keepBackup = false
 [merge]

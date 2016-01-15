@@ -9,6 +9,9 @@ tags
 *.tags
 cscope.files
 
+## PHP
+.php_cs.cache
+
 ## SYMFONY
 
 behat.yml

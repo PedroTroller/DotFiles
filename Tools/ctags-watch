@@ -4,7 +4,7 @@ while file=$(inotifywait -r -e modify -e delete -e create -e move --format "%w%f
     EXT=${file##*.}
     if [ $EXT = "php" ]
     then
-        ctags -R ./src app/AppKernel.php ./vendor ./features ./spec --languages=php
+        ctags -R ./src app/AppKernel.php ./vendor ./features ./spec --languages=php --exclude=*.js,*.html -V
         echo "Done..."
     fi
 done

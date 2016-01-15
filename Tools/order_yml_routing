@@ -1,0 +1,39 @@
+#!/usr/bin/php
+<?php
+
+list($me, $file) = $argv;
+
+$content = file_get_contents($file);
+$content = str_replace("\t", "    ", $content);
+$content = explode("\n", $content);
+
+$indents = [];
+
+foreach ($content as $index => $line) {
+    if (true === empty(trim($line))) {
+        unset($content[$index]);
+    }
+
+    $current = 0;
+
+    while(0 === strpos($line, ' ')) {
+        $current++;
+        $line = substr($line, 1);
+    }
+
+    $indents[] = [$current / 4, $line];
+}
+
+
+die(var_dump($indents));
+
+function arrange(&$array, &$result, $indent = 0)
+{
+    list($current, $line) = current($array);
+
+    if ($indent === $current) {
+        $result[$line] = [];
+
+        return arrange($array, $result, $current);
+    }
+}

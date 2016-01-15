@@ -338,14 +338,14 @@ let g:phpqa_codesniffer_autorun = 0
 
 nmap <F8> :TagbarToggle <CR>
 
-function! OrderNamespace()
-    execute ":! ~/Tools/order_namespace %"
-    execute ':e'
-    execute ':set syntax=php'
-    execute ''
-endfunction
-
-:autocmd BufWritePost *.php :call OrderNamespace()
+"function! OrderNamespace()
+"    execute ":! ~/Tools/order_namespace %"
+"    execute ':e'
+"    execute ':set syntax=php'
+"    execute ''
+"endfunction
+"
+":autocmd BufWritePost *.php :call OrderNamespace()
 
 function! OrderYmlServices()
     execute ":! ~/Tools/order_yml_services ".@%." %"
@@ -407,6 +407,7 @@ command! Nein : ! cvlc ~/.sample/Nein.mp3 vlc://quit --play-and-exit /<cword>
 command! Yeah : ! cvlc ~/.sample/Yeah.mp3 vlc://quit --play-and-exit /<cword>
 command! PD : ! cvlc ~/.sample/PD.mp3 vlc://quit --play-and-exit /<cword>
 command! Rythm : ! cvlc ~/.sample/Rythm.mp3 vlc://quit --play-and-exit /<cword>
+command! Blublut : ! cvlc ~/.sample/Blublut.mp3 vlc://quit --play-and-exit /<cword>
 
 map <Leader>lp :Oui<CR>
 map <Leader>jr :Jregrette<CR>
@@ -420,3 +421,6 @@ map <Leader>nn :Nein<CR>
 map <Leader>ya :Yeah<CR>
 map <Leader>pd :PD<CR>
 map <Leader>mz :Rythm<CR>
+map <Leader>bl :Blublut<CR>
+
+let g:php_search_doc_command='xdg-open'

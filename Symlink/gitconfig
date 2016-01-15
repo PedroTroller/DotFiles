@@ -13,3 +13,5 @@
 	keepBackup = false
 [merge]
 	tool = meld
+[init]
+	templatedir = ~/.git_template

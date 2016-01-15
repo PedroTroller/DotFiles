@@ -8,6 +8,7 @@ use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\Form\FormInterface;
 use Symfony\Component\Form\FormView;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
+use Symfony\Component\OptionsResolver\OptionsResolver;
 
 class ${2:`!v expand("%:t:r")`} extends AbstractType
 {
@@ -24,6 +25,10 @@ class ${2:`!v expand("%:t:r")`} extends AbstractType
     }
 
     public function setDefaultOptions(OptionsResolverInterface $resolver)
+    {
+    }
+
+    public function configureOptions(OptionsResolver $options)
     {
     }
 

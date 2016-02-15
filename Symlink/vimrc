@@ -93,8 +93,6 @@ autocmd FileType php,js,css,html,xml,yaml,vim autocmd BufWritePre <buffer> :call
 au BufNewFile,BufRead *.twig set ft=twig
 au BufNewFile,BufRead *.twig set syntax=htmljinja
 
-nmap bns :call PhpExpandClass()<CR>
-
 " Syntastic
 let g:syntastic_enable_signs = 1
 let g:syntastic_auto_loc_list = 2
@@ -333,19 +331,7 @@ let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 
 highlight Cursor guifg=white guibg=white
 
-"PHPCS MD CC
-let g:phpqa_codesniffer_autorun = 0
-
 nmap <F8> :TagbarToggle <CR>
-
-"function! OrderNamespace()
-"    execute ":! ~/Tools/order_namespace %"
-"    execute ':e'
-"    execute ':set syntax=php'
-"    execute ''
-"endfunction
-"
-":autocmd BufWritePost *.php :call OrderNamespace()
 
 function! OrderYmlServices()
     execute ":! ~/Tools/order_yml_services ".@%." %"
@@ -363,7 +349,7 @@ endfunction
 
 autocmd FileType yaml :nmap <silent> <leader>at :call OrderYmlTranslations()<CR>
 
-map <leader>sp :execute ":! cowsay ".@%." && phpspec run ".@%." -fpretty"<CR>
+map <leader>sp :execute ":! cowsay ".@%." && phpspec run ".@%." -fpretty -vv"<CR>
 
 inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a
 
@@ -377,13 +363,6 @@ function! s:align()
         call search(repeat('[^|]*|',column).'\s\{-\}'.repeat('.',position),'ce',line('.'))
     endif
 endfunction
-
-function! s:myGrep(str)
-    execute ":grep -ri ./ ".str
-    execute ":cw"
-endfunction
-
-command! -nargs=1 Gp call s:myGrep(<f-args>)
 
 nmap <Leader>a= :Tabularize /=<CR>
 vmap <Leader>a= :Tabularize /=<CR>
@@ -424,3 +403,5 @@ map <Leader>mz :Rythm<CR>
 map <Leader>bl :Blublut<CR>
 
 let g:php_search_doc_command='xdg-open'
+
+map <buffer> bns :call PhpExpandClass()<CR>

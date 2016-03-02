@@ -31,6 +31,9 @@ $possibleBinaries = array(
     sprintf('%s/php-cs-fixer', getcwd()),
     sprintf('%s/php-cs-fixer', '.'),
     sprintf('%s/php-cs-fixer', current($root)),
+    sprintf('%s/bin/php-cs-fixer', getcwd()),
+    sprintf('%s/bin/php-cs-fixer', '.'),
+    sprintf('%s/bin/php-cs-fixer', current($root)),
 );
 
 $possibleBinaries = array_unique($possibleBinaries);

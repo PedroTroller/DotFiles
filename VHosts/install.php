@@ -14,6 +14,7 @@ function buildUrl($entry)
 $dir = dirname(dirname(__DIR__)) . '/Works/';
 $hosts = '/etc/hosts';
 $sites = '/etc/apache2/sites-available/000-default.conf';
+$enabled = '/etc/apache2/sites-enabled';
 $limiter = "# CUSTOM HOSTS\n";
 
 // HOST FILE
@@ -37,6 +38,8 @@ $handle = opendir($dir);
 while (false !== ($entry = readdir($handle))) {
     if (!in_array($entry, ['.', '..']) && is_dir($dir.$entry)) {
         $str = sprintf("127.0.0.1\t%s\n", strtolower(buildUrl($entry)));
+        $content[] = $str;
+        $str = sprintf("127.0.0.1\twww.%s\n", strtolower(buildUrl($entry)));
         $content[] = $str;
     }
 }
@@ -64,20 +67,18 @@ $handle = opendir($dir);
 while (false !== ($entry = readdir($handle))) {
     if (!in_array($entry, ['.', '..']) && is_dir($dir.$entry)) {
         $targ = $dir.$entry;
-        if (is_dir($dir.$entry.'/web/')) {
+        if (is_dir($targ.'/symfony/web')) {
+            $targ = sprintf('%s/symfony/web', $targ);
+        }
+        if (is_dir($targ.'/web')) {
             $targ = sprintf('%s/web', $targ);
         }
-        $content[] = sprintf("\n");
-        $content[] = sprintf("<VirtualHost *:80>\n");
-        $content[] = sprintf("\tServerName %s\n", strtolower(buildUrl($entry)));
-        $content[] = sprintf("\tServerAlias %s\n", buildUrl($entry));
-        $content[] = sprintf("\tDocumentRoot %s\n", $targ);
-        $content[] = sprintf("\t<Directory %s>\n", $targ);
-        $content[] = sprintf("\t\tAllowOverride All\n");
-        $content[] = sprintf("\t\tRequire all granted\n");
-        $content[] = sprintf("\t</Directory>\n");
-        $content[] = sprintf("</VirtualHost>\n");
+
+        $template = file_get_contents(sprintf('%s/template.conf', __DIR__));
+        $template = str_replace('%server_name%', strtolower(buildUrl($entry)), $template);
+        $template = str_replace('%server_alias%', buildUrl($entry), $template);
+        $template = str_replace('%document_root%', $targ, $template);
+
+        file_put_contents(sprintf('%s/%s.conf', $enabled, $entry), $template);
     }
 }
-
-file_put_contents($sites, $content);

@@ -1,5 +1,5 @@
 favorites=exo-web-browser.desktop,exo-mail-reader.desktop,exo-file-manager.desktop,abiword.desktop,gnumeric.desktop,pidgin.desktop,gmusicbrowser.desktop,ubuntu-software-center.desktop,exo-terminal-emulator.desktop,xfhelp4.desktop
-recent=autoscan-network.desktop,thunderbird.desktop,google-chrome.desktop,skype.desktop,xfce-session-settings.desktop,exo-terminal-emulator.desktop,exo-file-manager.desktop,gnome-do.desktop,mousepad.desktop,wine-browsedrive.desktop
+recent=skype.desktop,exo-file-manager.desktop,mousepad.desktop,exo-terminal-emulator.desktop,google-chrome.desktop,autoscan-network.desktop,thunderbird.desktop,xfce-session-settings.desktop,gnome-do.desktop,wine-browsedrive.desktop
 button-title=Applications Menu
 button-icon=xubuntu-logo-menu
 button-single-row=false

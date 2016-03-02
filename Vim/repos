@@ -4,6 +4,7 @@ git@github.com:Shougo/neocomplete.vim.git
 git@github.com:SirVer/ultisnips.git
 git@github.com:airblade/vim-gitgutter.git
 git@github.com:arnaud-lb/vim-php-namespace.git
+git@github.com:elzr/vim-json.git
 git@github.com:erikfercak/php-search-doc.git
 git@github.com:evidens/vim-twig.git
 git@github.com:godlygeek/tabular.git

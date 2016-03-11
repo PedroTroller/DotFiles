@@ -1,6 +1,4 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/home/pedro/Works/MyWonderApp'
-let g:netrw_dirhist_2='/home/pedro/Works/MyWonderApp/app'
-let g:netrw_dirhist_3='/home/pedro/Works/CACOM-Plateforme-de-devis/app'
-let g:netrw_dirhist_4='/home/pedro/Works/CACOM-Plateforme-de-devis/var'
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='/home/pedro/Works/CACOM-Plateforme-de-devis/node_modules/datatables/media'
+let g:netrw_dirhist_2='/home/pedro/Works/CACOM-Plateforme-de-devis/node_modules/datatables/media/js'

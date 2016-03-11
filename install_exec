@@ -22,3 +22,4 @@ sh ~/DotFiles/Selenium/install
 sh ~/DotFiles/PhantomJs/install
 sh ~/DotFiles/WkHtmlToPDF/install
 sh ~/DotFiles/BTSync/install
+sh ~/DotFiles/Hub/install

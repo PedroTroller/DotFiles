@@ -405,3 +405,9 @@ map <Leader>bl :Blublut<CR>
 let g:php_search_doc_command='xdg-open'
 
 map <buffer> bns :call PhpExpandClass()<CR>
+
+set clipboard=unnamedplus " Allow to cp/p from clipboard
+
+" easy copy-paste clipboard
+vmap <Leader>y "+y<CR>
+nmap <Leader>p "+p<CR>

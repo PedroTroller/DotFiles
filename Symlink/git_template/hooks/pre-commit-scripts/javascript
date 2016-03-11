@@ -1,0 +1,63 @@
+#!/usr/bin/php
+<?php
+
+$confFile = null;
+$binary   = null;
+
+exec('git rev-parse --show-toplevel', $root);
+
+$possibleConfig = array(
+    sprintf('%s/.eslintrc.yml', getcwd()),
+    sprintf('%s/.eslintrc.yml', '.'),
+    sprintf('%s/.eslintrc.yml', current($root)),
+    sprintf('%s/.eslintrc.js', getcwd()),
+    sprintf('%s/.eslintrc.js', '.'),
+    sprintf('%s/.eslintrc.js', current($root)),
+);
+
+$possibleConfig = array_unique($possibleConfig);
+
+foreach ($possibleConfig as $file) {
+    if (null === $confFile && true === file_exists($file)) {
+        $confFile = $file;
+    }
+}
+
+if (null === $confFile) {
+    exit(0);
+}
+
+$possibleBinaries = array(
+    sprintf('%s/node_modules/.bin/eslint', getcwd()),
+    sprintf('%s/node_modules/.bin/eslint', '.'),
+    sprintf('%s/node_modules/.bin/eslint', current($root)),
+);
+
+$possibleBinaries = array_unique($possibleBinaries);
+
+foreach ($possibleBinaries as $file) {
+    if (null === $binary && true === file_exists($file)) {
+        $binary = $file;
+    }
+}
+
+if (null === $binary) {
+    $binary = 'eslint';
+}
+
+exec('git diff --cached --name-status --diff-filter=ACM', $output);
+
+foreach ($output as $file) {
+    $fileName = trim(substr($file, 1) );
+    if (pathinfo($fileName,PATHINFO_EXTENSION) == "js") {
+        $lint_output = array();
+        exec("{$binary} {$fileName} --fix --config=\"{$confFile}\"; git add {$fileName}", $lint_output, $return);
+        if ($return != 0) {
+            echo implode("\n", $lint_output), "\n";
+
+            exit(1);
+        }
+    }
+}
+
+exit(0);

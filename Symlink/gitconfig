@@ -1,6 +1,7 @@
 [core]
     excludesfile = /home/pedro/.gitignore
 	editor = vim
+    fileMode = false
 [color]
     ui = true
 [user]

@@ -12,6 +12,7 @@ Guardfile
 tags
 *.tags
 cscope.files
+.ctags.json
 
 ## PHP
 

@@ -230,7 +230,7 @@ filetype indent on
 set cscopetag cst
 cscope add cscope.out
 
-set tags=tags,vendor.tags,pear.tags
+" set tags=php.tags
 
 " map for cscope
 
@@ -349,8 +349,6 @@ endfunction
 
 autocmd FileType yaml :nmap <silent> <leader>at :call OrderYmlTranslations()<CR>
 
-map <leader>sp :execute ":! cowsay ".@%." && phpspec run ".@%." -fpretty -vv"<CR>
-
 inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a
 
 function! s:align()
@@ -375,18 +373,18 @@ vmap <Leader>a: :Tabularize /: \zs<CR>
 nmap <Leader>a, :Tabularize /, \zs<CR>
 vmap <Leader>a, :Tabularize /, \zs<CR>
 
-command! Oui : ! cvlc ~/.sample/Oui.mp3 vlc://quit --play-and-exit /<cword>
-command! Jregrette : ! cvlc ~/.sample/Jregrette.mp3 vlc://quit --play-and-exit /<cword>
-command! Internet : ! cvlc ~/.sample/Internet.mp3 vlc://quit --play-and-exit /<cword>
-command! Dance : ! cvlc ~/.sample/Dance.mp3 vlc://quit --play-and-exit /<cword>
-command! Moto : ! cvlc ~/.sample/Moto.mp3 vlc://quit --play-and-exit /<cword>
-command! MyMind : ! cvlc ~/.sample/MyMindTellMeNo.mp3 vlc://quit --play-and-exit /<cword>
-command! Gogole : ! cvlc ~/.sample/Gogole.mp3 vlc://quit --play-and-exit /<cword>
-command! Nein : ! cvlc ~/.sample/Nein.mp3 vlc://quit --play-and-exit /<cword>
-command! Yeah : ! cvlc ~/.sample/Yeah.mp3 vlc://quit --play-and-exit /<cword>
-command! PD : ! cvlc ~/.sample/PD.mp3 vlc://quit --play-and-exit /<cword>
-command! Rythm : ! cvlc ~/.sample/Rythm.mp3 vlc://quit --play-and-exit /<cword>
-command! Blublut : ! cvlc ~/.sample/Blublut.mp3 vlc://quit --play-and-exit /<cword>
+command! Oui : ! play ~/.sample/Oui.mp3
+command! Jregrette : ! play ~/.sample/Jregrette.mp3
+command! Internet : ! play ~/.sample/Internet.mp3
+command! Dance : ! play ~/.sample/Dance.mp3
+command! Moto : ! play ~/.sample/Moto.mp3
+command! MyMind : ! play ~/.sample/MyMindTellMeNo.mp3
+command! Gogole : ! play ~/.sample/Gogole.mp3
+command! Nein : ! play ~/.sample/Nein.mp3
+command! Yeah : ! play ~/.sample/Yeah.mp3
+command! PD : ! play ~/.sample/PD.mp3
+command! Rythm : ! play ~/.sample/Rythm.mp3
+command! Blublut : ! play ~/.sample/Blublut.mp3
 
 map <Leader>lp :Oui<CR>
 map <Leader>jr :Jregrette<CR>

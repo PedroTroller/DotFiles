@@ -1,0 +1,3 @@
+#!/bin/bash
+
+N_PREFIX=~/bin/nodejs ~/bin/nodejs/lib/node_modules/n/bin/n $@

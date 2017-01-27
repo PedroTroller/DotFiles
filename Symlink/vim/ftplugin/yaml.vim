@@ -1,6 +1,5 @@
-" Vim indent file
-" Language: Yaml
-" Author: Ian Young
+map <buffer> bns :call PhpExpandClass()<CR>
+
 " Get it bundled for pathogen: https://github.com/avakhov/vim-yaml
 
 if exists("b:did_indent")
@@ -28,7 +27,5 @@ function! GetYamlIndent()
         return indent
     endif
 endfunction
-
-map <buffer> bns :call PhpExpandClass()<CR>
 
 " vim:set sw=2:

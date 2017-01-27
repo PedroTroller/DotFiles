@@ -5,7 +5,7 @@ sh ~/DotFiles/WorkSpace/install
 sh ~/DotFiles/Tools/install
 sh ~/DotFiles/SSH/install
 sh ~/DotFiles/Config/install
-sh ~/DotFiles/MysqlServer/install
+# sh ~/DotFiles/MysqlServer/install
 sh ~/DotFiles/Apt/install
 sh ~/DotFiles/XFCE/install
 sh ~/DotFiles/Ruby/install
@@ -14,12 +14,13 @@ sh ~/DotFiles/Composer/install
 sh ~/DotFiles/Pear/install
 sh ~/DotFiles/Vim/install
 sh ~/DotFiles/Powerline/install
-sh ~/DotFiles/Apache/install
+# sh ~/DotFiles/Apache/install
 sh ~/DotFiles/PHP/install
-sh ~/DotFiles/PhpMyAdmin/install
-sh ~/DotFiles/VHosts/install
-sh ~/DotFiles/Selenium/install
-sh ~/DotFiles/PhantomJs/install
-sh ~/DotFiles/WkHtmlToPDF/install
-sh ~/DotFiles/BTSync/install
+# sh ~/DotFiles/PhpMyAdmin/install
+# sh ~/DotFiles/VHosts/install
+# sh ~/DotFiles/Selenium/install
+# sh ~/DotFiles/PhantomJs/install
+# sh ~/DotFiles/WkHtmlToPDF/install
+# sh ~/DotFiles/BTSync/install
 sh ~/DotFiles/Hub/install
+sh ~/DotFiles/Docker/install

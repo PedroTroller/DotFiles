@@ -20,7 +20,7 @@ alias gps='git push'
 alias gpu='git pull'
 alias gck='git checkout'
 alias gcl='git clone'
-alias gpurge='git branch --merged master | grep -v master | grep -v develop | xargs git branch -d'
+alias gpurge='git branch --merged | grep -v master | grep -v develop | xargs git branch -d'
 alias log="git log --graph --pretty=format:'%Cred%h %Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
 alias :q="exit"
 alias :e="vim"
@@ -34,4 +34,3 @@ alias xflock4="~/Tools/lock"
 alias sfctags="ctags -R ./src app/AppKernel.php ./vendor ./features ./spec"
 alias fix="php-cs-fixer --config-file=~/.php_cs fix"
 alias tmuxify="teamocil --layout=./.teamocil.yml"
-alias "docker-service"="docker-compose --file=/home/$USER/.docker-compose.yml"

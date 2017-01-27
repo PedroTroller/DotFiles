@@ -28,12 +28,12 @@
   <property name="compat" type="empty">
     <property name="LaunchGNOME" type="empty"/>
   </property>
+  <property name="shutdown" type="empty">
+    <property name="LockScreen" type="empty"/>
+  </property>
   <property name="startup" type="empty">
     <property name="screensaver" type="empty">
       <property name="type" type="empty"/>
     </property>
-  </property>
-  <property name="shutdown" type="empty">
-    <property name="LockScreen" type="bool" value="false"/>
   </property>
 </channel>

@@ -10,6 +10,7 @@
       <property name="show-trash" type="bool" value="false"/>
     </property>
     <property name="icon-size" type="uint" value="32"/>
+    <property name="tooltip-size" type="empty"/>
     <property name="show-thumbnails" type="bool" value="false"/>
     <property name="show-tooltips" type="bool" value="true"/>
   </property>
@@ -75,6 +76,23 @@
           <value type="int" value="-1"/>
         </property>
         <property name="color-style" type="int" value="2"/>
+        <property name="workspace0" type="empty">
+          <property name="color-style" type="int" value="2"/>
+          <property name="color1" type="array">
+            <value type="uint" value="10280"/>
+            <value type="uint" value="10280"/>
+            <value type="uint" value="10280"/>
+            <value type="uint" value="65535"/>
+          </property>
+          <property name="color2" type="array">
+            <value type="int" value="0"/>
+            <value type="int" value="0"/>
+            <value type="int" value="0"/>
+            <value type="int" value="-1"/>
+          </property>
+          <property name="image-style" type="int" value="0"/>
+          <property name="last-image" type="string" value="/usr/share/backgrounds/xfce/xfce-blue.jpg"/>
+        </property>
       </property>
       <property name="xinerama-stretch" type="bool" value="false"/>
       <property name="monitorDVI-I-1" type="empty">

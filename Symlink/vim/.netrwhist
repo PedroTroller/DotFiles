@@ -1,4 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/home/pedro/Works/CACOM-Plateforme-de-devis/node_modules/datatables/media'
-let g:netrw_dirhist_2='/home/pedro/Works/CACOM-Plateforme-de-devis/node_modules/datatables/media/js'
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/pedro/Works/60-ans/template'
+let g:netrw_dirhist_2='/home/pedro/Works/admin/apps/launcher/src/Plateforme/Launcher/Transformer/Pgl2Cid'
+let g:netrw_dirhist_3='/home/pedro/Works/admin/apps/launcher/src/Plateforme/Launcher/Transformer'
+let g:netrw_dirhist_4='/home/pedro/DotFiles/Symlink/git_template'
+let g:netrw_dirhist_5='/home/pedro/DotFiles/Symlink/git_template/hooks'

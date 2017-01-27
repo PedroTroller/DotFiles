@@ -51,7 +51,7 @@ foreach ($output as $file) {
     $fileName = trim(substr($file, 1) );
     if (pathinfo($fileName,PATHINFO_EXTENSION) == "js") {
         $lint_output = array();
-        exec("{$binary} {$fileName} --fix --config=\"{$confFile}\"; git add {$fileName}", $lint_output, $return);
+        exec("node {$binary} {$fileName} --fix --config=\"{$confFile}\"; git add {$fileName}", $lint_output, $return);
         if ($return != 0) {
             echo implode("\n", $lint_output), "\n";
 

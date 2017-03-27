@@ -33,4 +33,8 @@ alias ~="cd ~"
 alias xflock4="~/Tools/lock"
 alias sfctags="ctags -R ./src app/AppKernel.php ./vendor ./features ./spec"
 alias fix="php-cs-fixer --config-file=~/.php_cs fix"
-alias tmuxify="teamocil --layout=./.teamocil.yml"
+
+# DOCKER
+
+alias docker-top="docker run -ti -v /var/run/docker.sock:/var/run/docker.sock quay.io/vektorlab/ctop:latest"
+alias docker-purge='docker stop $(docker ps -q -a) && docker rm -vf $(docker ps -q -a) && docker rmi -f $(docker images -q) && docker network rm $(docker network ls -q)'

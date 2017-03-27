@@ -92,6 +92,8 @@ autocmd FileType php,js,css,html,xml,yaml,vim autocmd BufWritePre <buffer> :call
 " Use the htmljinja syntax for twig files
 au BufNewFile,BufRead *.twig set ft=twig
 au BufNewFile,BufRead *.twig set syntax=htmljinja
+au BufNewFile,BufRead *.jsonld set ft=json
+au BufNewFile,BufRead *.yml.dist set ft=yaml
 
 " Syntastic
 let g:syntastic_enable_signs = 1

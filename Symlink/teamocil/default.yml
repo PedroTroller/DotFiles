@@ -1,0 +1,13 @@
+windows:
+  - name: editor
+    panes:
+      - vim
+  - name: shell
+    panes:
+      - commands:
+        - tmux select-window -t editor
+        - clear
+  - name: tools
+    panes:
+      - commands:
+          - ~/Tools/ctags-watch

@@ -7,23 +7,19 @@ public function get${2/\w+\s*/\u$0/}()
 public function set${2/\w+\s*/\u$0/}($$2)
 {
     $this->$2 = $$2;
-
-	return $this;
 }
 endsnippet
 
 snippet gt
-public function get${2}()
+public function get${2/\w+\s*/\u$0/}()
 {
-    return $this->${2/\w+\s*/\l$0/};
+    return $this->${2};
 }
 endsnippet
 
 snippet st
-public function set${2}($${2/\w+\s*/\l$0/})
+public function set${2/\w+\s*/\u$0/}($$2)
 {
-    $this->${2/\w+\s*/\l$0/} = $${2/\w+\s*/\l$0/};
-
-	return $this;
+    $this->${2} = $$2;
 }
 endsnippet

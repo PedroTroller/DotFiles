@@ -16,7 +16,7 @@
     <property name="maximized" type="bool" value="true"/>
   </property>
   <property name="folders" type="empty">
-    <property name="last-used-media" type="string" value="/home/pedro/Downloads"/>
+    <property name="last-used-media" type="string" value="/home/pedro/Téléchargements"/>
   </property>
   <property name="playlist" type="empty">
     <property name="show-playlist" type="bool" value="false"/>

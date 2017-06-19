@@ -7,9 +7,6 @@ alias phplib='teamocil php'
 alias sinit='sudo setfacl -R -m u:www-data:rwX -m u:`whoami`:rwX app/cache app/logs ; sudo setfacl -dR -m u:www-data:rwx -m u:`whoami`:rwx app/cache app/logs ; cacl'
 alias selenium="phantomjs --webdriver=4444"
 alias tmux='tmux -2'
-alias cacl='sf cache:clear'
-alias rode='sf ro:de'
-alias contde='sf cont:de'
 alias nyan='phpspec --format=nyan'
 alias git="hub"
 alias g='git'
@@ -33,6 +30,12 @@ alias ~="cd ~"
 alias xflock4="~/Tools/lock"
 alias sfctags="ctags -R ./src app/AppKernel.php ./vendor ./features ./spec"
 alias fix="php-cs-fixer --config-file=~/.php_cs fix"
+
+# SYMFONY
+
+alias cacl='sf cache:clear'
+alias rode='sf debug:router'
+alias contde='sf debug:container'
 
 # DOCKER
 

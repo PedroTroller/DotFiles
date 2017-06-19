@@ -11,6 +11,7 @@
       <property name="plugin-ids" type="array">
         <value type="int" value="1"/>
         <value type="int" value="11"/>
+        <value type="int" value="12"/>
         <value type="int" value="3"/>
         <value type="int" value="5"/>
         <value type="int" value="6"/>
@@ -54,20 +55,14 @@
   <property name="plugins" type="empty">
     <property name="plugin-5" type="string" value="indicator">
       <property name="blacklist" type="array">
-        <value type="string" value="libme.so"/>
-        <value type="string" value="libdatetime.so"/>
-        <value type="string" value="libsession.so"/>
-        <value type="string" value="libappmenu.so"/>
       </property>
       <property name="known-indicators" type="array">
-        <value type="string" value="libapplication.so"/>
-        <value type="string" value="com.canonical.indicator.sound"/>
-        <value type="string" value="com.canonical.indicator.messages"/>
-        <value type="string" value="com.canonical.indicator.power"/>
-        <value type="string" value="libsynapse.so"/>
       </property>
       <property name="single-row" type="bool" value="true"/>
       <property name="align-left" type="bool" value="true"/>
+      <property name="whitelist" type="array">
+      </property>
+      <property name="mode-whitelist" type="bool" value="false"/>
     </property>
     <property name="plugin-6" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
@@ -93,6 +88,20 @@
     <property name="plugin-4" type="string" value="whiskermenu"/>
     <property name="plugin-10" type="string" value="separator">
       <property name="style" type="uint" value="1"/>
+    </property>
+    <property name="plugin-12" type="string" value="systray">
+      <property name="names-visible" type="array">
+        <value type="string" value="thunar"/>
+        <value type="string" value="screenkey"/>
+        <value type="string" value="google-chrome-stable"/>
+        <value type="string" value="do"/>
+        <value type="string" value="synapse"/>
+        <value type="string" value="blueman-applet"/>
+        <value type="string" value="réseau"/>
+        <value type="string" value="xfce4-power-manager"/>
+        <value type="string" value="slack"/>
+        <value type="string" value="notes"/>
+      </property>
     </property>
   </property>
   <property name="configver" type="int" value="2"/>

@@ -82,7 +82,7 @@ autocmd BufReadPost fugitive://* set bufhidden=delete
 set cursorline
 
 "Change line numbers color
-autocmd InsertEnter * hi LineNr      ctermfg=16 ctermbg=214 guifg=Orange guibg=#151515
+autocmd InsertEnter * hi LineNr      ctermfg=16 ctermbg=214 guifg=Orange guibg=Blue
 autocmd InsertLeave * hi LineNr      term=underline ctermfg=59 ctermbg=232 guifg=#605958 guibg=#151515
 
 autocmd BufEnter    * hi SpellCap    guisp=Orange
@@ -94,6 +94,9 @@ au BufNewFile,BufRead *.twig set ft=twig
 au BufNewFile,BufRead *.twig set syntax=htmljinja
 au BufNewFile,BufRead *.jsonld set ft=json
 au BufNewFile,BufRead *.yml.dist set ft=yaml
+au BufNewFile,BufRead *.toml set ft=yaml
+au BufNewFile,BufRead *.ts set ft=javascript
+au BufNewFile,BufRead .env.dist set ft=sh
 
 " Syntastic
 let g:syntastic_enable_signs = 1
@@ -387,6 +390,7 @@ command! Yeah : ! play ~/.sample/Yeah.mp3
 command! PD : ! play ~/.sample/PD.mp3
 command! Rythm : ! play ~/.sample/Rythm.mp3
 command! Blublut : ! play ~/.sample/Blublut.mp3
+command! Yaya : ! play ~/.sample/Yayaya.mp3
 
 map <Leader>lp :Oui<CR>
 map <Leader>jr :Jregrette<CR>
@@ -401,6 +405,7 @@ map <Leader>ya :Yeah<CR>
 map <Leader>pd :PD<CR>
 map <Leader>mz :Rythm<CR>
 map <Leader>bl :Blublut<CR>
+map <Leader>ya :Yaya<CR>
 
 let g:php_search_doc_command='xdg-open'
 

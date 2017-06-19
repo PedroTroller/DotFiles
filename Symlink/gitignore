@@ -17,6 +17,7 @@ cscope.files
 ## PHP
 
 .php_cs.cache
+cs_fixer_tmp*
 
 ## SYMFONY
 

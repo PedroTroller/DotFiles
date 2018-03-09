@@ -28,7 +28,7 @@ if (null === $confFile) {
 }
 
 $possibleBinaries = array(
-    sprintf('%s/php-cs-fiser', getcwd()),
+    sprintf('%s/php-cs-fixer', getcwd()),
     sprintf('%s/php-cs-fixer', '.'),
     sprintf('%s/php-cs-fixer', current($root)),
 );

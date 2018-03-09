@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cp ~/.teamocil/default.yml ./.teamocil.yml -n
+
+teamocil --layout .teamocil.yml

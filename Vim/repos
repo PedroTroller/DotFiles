@@ -3,6 +3,7 @@ git@github.com:Shougo/neocomplete.vim.git
 git@github.com:SirVer/ultisnips.git
 git@github.com:airblade/vim-gitgutter.git
 git@github.com:arnaud-lb/vim-php-namespace.git
+git@github.com:editorconfig/editorconfig-vim.git
 git@github.com:ekalinin/Dockerfile.vim.git
 git@github.com:elzr/vim-json.git
 git@github.com:erikfercak/php-search-doc.git
@@ -10,7 +11,9 @@ git@github.com:evidens/vim-twig.git
 git@github.com:godlygeek/tabular.git
 git@github.com:groenewege/vim-less.git
 git@github.com:kien/ctrlp.vim.git
+git@github.com:leafgarland/typescript-vim.git
 git@github.com:majutsushi/tagbar.git
+git@github.com:posva/vim-vue.git
 git@github.com:shawncplus/phpcomplete.vim.git
 git@github.com:sjbach/lusty.git
 git@github.com:stephpy/vim-yaml.git
@@ -19,3 +22,4 @@ git@github.com:tpope/vim-eunuch.git
 git@github.com:tpope/vim-fugitive.git
 git@github.com:tpope/vim-ragtag.git
 git@github.com:veloce/vim-behat.git
+git@github.com:w0rp/ale.git

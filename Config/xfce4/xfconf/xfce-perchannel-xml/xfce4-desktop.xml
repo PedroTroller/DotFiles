@@ -2,326 +2,59 @@
 
 <channel name="xfce4-desktop" version="1.0">
   <property name="desktop-icons" type="empty">
-    <property name="style" type="empty"/>
+    <property name="style" type="int" value="0"/>
     <property name="file-icons" type="empty">
-      <property name="show-home" type="bool" value="false"/>
-      <property name="show-filesystem" type="bool" value="false"/>
-      <property name="show-removable" type="bool" value="false"/>
-      <property name="show-trash" type="bool" value="false"/>
+      <property name="show-home" type="empty"/>
+      <property name="show-filesystem" type="empty"/>
+      <property name="show-removable" type="empty"/>
+      <property name="show-trash" type="empty"/>
     </property>
-    <property name="icon-size" type="uint" value="32"/>
+    <property name="icon-size" type="empty"/>
     <property name="tooltip-size" type="empty"/>
     <property name="show-thumbnails" type="bool" value="false"/>
-    <property name="show-tooltips" type="bool" value="true"/>
+    <property name="show-tooltips" type="bool" value="false"/>
   </property>
   <property name="backdrop" type="empty">
     <property name="screen0" type="empty">
       <property name="monitor0" type="empty">
-        <property name="image-path" type="string" value="/usr/share/backgrounds/xfce/xfce-blue.jpg"/>
-        <property name="image-style" type="int" value="0"/>
-        <property name="image-show" type="bool" value="false"/>
-        <property name="last-image" type="string" value="/usr/share/backgrounds/xfce/xfce-blue.jpg"/>
-        <property name="last-single-image" type="string" value="/usr/share/backgrounds/xfce/xfce-blue.jpg"/>
-        <property name="brightness" type="int" value="50"/>
-        <property name="saturation" type="double" value="-10.000000"/>
-        <property name="color1" type="array">
-          <value type="uint" value="10280"/>
-          <value type="uint" value="10280"/>
-          <value type="uint" value="10280"/>
-          <value type="uint" value="65535"/>
-        </property>
-        <property name="color2" type="array">
-          <value type="uint" value="0"/>
-          <value type="uint" value="0"/>
-          <value type="uint" value="0"/>
-          <value type="uint" value="65535"/>
-        </property>
-        <property name="color-style" type="int" value="2"/>
+        <property name="image-path" type="empty"/>
+        <property name="image-style" type="empty"/>
+        <property name="image-show" type="empty"/>
         <property name="workspace0" type="empty">
-          <property name="color-style" type="int" value="2"/>
+          <property name="color-style" type="int" value="0"/>
+          <property name="image-style" type="int" value="1"/>
+          <property name="last-image" type="string" value="/run/user/1000/gvfs/mtp:host=%5Busb%3A001%2C017%5D/Espace de stockage interne partagé/Pictures/Instagram/IMG_20161009_125819.jpg"/>
           <property name="color1" type="array">
-            <value type="uint" value="10280"/>
-            <value type="uint" value="10280"/>
-            <value type="uint" value="10280"/>
-            <value type="uint" value="65535"/>
-          </property>
-          <property name="color2" type="array">
             <value type="uint" value="0"/>
             <value type="uint" value="0"/>
             <value type="uint" value="0"/>
             <value type="uint" value="65535"/>
           </property>
-          <property name="image-style" type="int" value="0"/>
-          <property name="last-image" type="string" value="/home/pedro/DotFiles/XFCE/backgrounds/6.jpg"/>
-        </property>
-        <property name="workspace1" type="empty">
-          <property name="color-style" type="int" value="2"/>
-          <property name="color1" type="array">
-            <value type="uint" value="10280"/>
-            <value type="uint" value="10280"/>
-            <value type="uint" value="10280"/>
-            <value type="uint" value="65535"/>
-          </property>
-          <property name="color2" type="array">
-            <value type="uint" value="0"/>
-            <value type="uint" value="0"/>
-            <value type="uint" value="0"/>
-            <value type="uint" value="65535"/>
-          </property>
-          <property name="image-style" type="int" value="0"/>
-          <property name="last-image" type="string" value="/usr/share/backgrounds/xfce/xfce-blue.jpg"/>
-        </property>
-        <property name="workspace2" type="empty">
-          <property name="color-style" type="int" value="2"/>
-          <property name="color1" type="array">
-            <value type="uint" value="10280"/>
-            <value type="uint" value="10280"/>
-            <value type="uint" value="10280"/>
-            <value type="uint" value="65535"/>
-          </property>
-          <property name="color2" type="array">
-            <value type="uint" value="0"/>
-            <value type="uint" value="0"/>
-            <value type="uint" value="0"/>
-            <value type="uint" value="65535"/>
-          </property>
-          <property name="image-style" type="int" value="0"/>
-          <property name="last-image" type="string" value="/usr/share/backgrounds/xfce/xfce-blue.jpg"/>
-        </property>
-        <property name="workspace3" type="empty">
-          <property name="color-style" type="int" value="2"/>
-          <property name="color1" type="array">
-            <value type="uint" value="10280"/>
-            <value type="uint" value="10280"/>
-            <value type="uint" value="10280"/>
-            <value type="uint" value="65535"/>
-          </property>
-          <property name="color2" type="array">
-            <value type="uint" value="0"/>
-            <value type="uint" value="0"/>
-            <value type="uint" value="0"/>
-            <value type="uint" value="65535"/>
-          </property>
-          <property name="image-style" type="int" value="0"/>
-          <property name="last-image" type="string" value="/usr/share/backgrounds/xfce/xfce-blue.jpg"/>
+          <property name="backdrop-cycle-enable" type="bool" value="false"/>
+          <property name="brightness" type="int" value="0"/>
+          <property name="saturation" type="double" value="1.000000"/>
         </property>
       </property>
       <property name="monitor1" type="empty">
-        <property name="image-path" type="string" value="/usr/share/backgrounds/xfce/xfce-blue.jpg"/>
-        <property name="image-style" type="int" value="5"/>
-        <property name="image-show" type="bool" value="false"/>
-        <property name="last-image" type="string" value="/usr/share/backgrounds/xfce/xfce-blue.jpg"/>
-        <property name="last-single-image" type="string" value="/usr/share/backgrounds/xfce/xfce-blue.jpg"/>
-        <property name="brightness" type="int" value="50"/>
-        <property name="saturation" type="double" value="-10.000000"/>
-        <property name="color1" type="array">
-          <value type="uint" value="10280"/>
-          <value type="uint" value="10280"/>
-          <value type="uint" value="10280"/>
-          <value type="uint" value="65535"/>
-        </property>
-        <property name="color2" type="array">
-          <value type="int" value="0"/>
-          <value type="int" value="0"/>
-          <value type="int" value="0"/>
-          <value type="int" value="-1"/>
-        </property>
-        <property name="color-style" type="int" value="2"/>
+        <property name="image-path" type="empty"/>
+        <property name="image-style" type="empty"/>
+        <property name="image-show" type="empty"/>
         <property name="workspace0" type="empty">
-          <property name="color-style" type="int" value="2"/>
-          <property name="color1" type="array">
-            <value type="uint" value="10280"/>
-            <value type="uint" value="10280"/>
-            <value type="uint" value="10280"/>
-            <value type="uint" value="65535"/>
-          </property>
-          <property name="color2" type="array">
-            <value type="int" value="0"/>
-            <value type="int" value="0"/>
-            <value type="int" value="0"/>
-            <value type="int" value="-1"/>
-          </property>
-          <property name="image-style" type="int" value="0"/>
-          <property name="last-image" type="string" value="/usr/share/backgrounds/xfce/xfce-blue.jpg"/>
-        </property>
-        <property name="workspace1" type="empty">
-          <property name="color-style" type="int" value="2"/>
-          <property name="color1" type="array">
-            <value type="uint" value="10280"/>
-            <value type="uint" value="10280"/>
-            <value type="uint" value="10280"/>
-            <value type="uint" value="65535"/>
-          </property>
-          <property name="color2" type="array">
-            <value type="int" value="0"/>
-            <value type="int" value="0"/>
-            <value type="int" value="0"/>
-            <value type="int" value="-1"/>
-          </property>
-          <property name="image-style" type="int" value="0"/>
-          <property name="last-image" type="string" value="/usr/share/backgrounds/xfce/xfce-blue.jpg"/>
-        </property>
-        <property name="workspace2" type="empty">
-          <property name="color-style" type="int" value="2"/>
-          <property name="color1" type="array">
-            <value type="uint" value="10280"/>
-            <value type="uint" value="10280"/>
-            <value type="uint" value="10280"/>
-            <value type="uint" value="65535"/>
-          </property>
-          <property name="color2" type="array">
-            <value type="int" value="0"/>
-            <value type="int" value="0"/>
-            <value type="int" value="0"/>
-            <value type="int" value="-1"/>
-          </property>
-          <property name="image-style" type="int" value="0"/>
-          <property name="last-image" type="string" value="/usr/share/backgrounds/xfce/xfce-blue.jpg"/>
-        </property>
-        <property name="workspace3" type="empty">
-          <property name="color-style" type="int" value="2"/>
-          <property name="color1" type="array">
-            <value type="uint" value="10280"/>
-            <value type="uint" value="10280"/>
-            <value type="uint" value="10280"/>
-            <value type="uint" value="65535"/>
-          </property>
-          <property name="color2" type="array">
-            <value type="int" value="0"/>
-            <value type="int" value="0"/>
-            <value type="int" value="0"/>
-            <value type="int" value="-1"/>
-          </property>
-          <property name="image-style" type="int" value="0"/>
-          <property name="last-image" type="string" value="/usr/share/backgrounds/xfce/xfce-blue.jpg"/>
-        </property>
-      </property>
-      <property name="xinerama-stretch" type="bool" value="false"/>
-      <property name="monitorDVI-I-1" type="empty">
-        <property name="workspace0" type="empty">
-          <property name="color1" type="array">
-            <value type="uint" value="62364"/>
-            <value type="uint" value="62364"/>
-            <value type="uint" value="62364"/>
-            <value type="uint" value="65535"/>
-          </property>
-          <property name="color2" type="array">
-            <value type="uint" value="0"/>
-            <value type="uint" value="0"/>
-            <value type="uint" value="0"/>
-            <value type="uint" value="65535"/>
-          </property>
-          <property name="color-style" type="int" value="1"/>
-          <property name="last-image" type="string" value="/home/pedro/.config/xfce4/desktop/background.jpg"/>
-          <property name="image-style" type="int" value="5"/>
-          <property name="backdrop-cycle-enable" type="bool" value="false"/>
-        </property>
-      </property>
-      <property name="monitorHDMI-1" type="empty">
-        <property name="workspace0" type="empty">
-          <property name="color1" type="array">
-            <value type="uint" value="65535"/>
-            <value type="uint" value="65535"/>
-            <value type="uint" value="65535"/>
-            <value type="uint" value="65535"/>
-          </property>
-          <property name="color2" type="array">
-            <value type="uint" value="65535"/>
-            <value type="uint" value="65535"/>
-            <value type="uint" value="65535"/>
-            <value type="uint" value="65535"/>
-          </property>
-          <property name="last-image" type="string" value="/home/pedro/DotFiles/Config/xfce4/desktop/background.jpg"/>
-          <property name="color-style" type="int" value="0"/>
-          <property name="backdrop-cycle-enable" type="bool" value="true"/>
-          <property name="backdrop-cycle-random-order" type="bool" value="true"/>
-          <property name="image-style" type="int" value="5"/>
-        </property>
-      </property>
-      <property name="monitorLVDS-0" type="empty">
-        <property name="workspace0" type="empty">
-          <property name="color1" type="array">
-            <value type="uint" value="4"/>
-            <value type="uint" value="0"/>
-            <value type="uint" value="16"/>
-            <value type="uint" value="65535"/>
-          </property>
-          <property name="color2" type="array">
-            <value type="uint" value="65535"/>
-            <value type="uint" value="65535"/>
-            <value type="uint" value="65535"/>
-            <value type="uint" value="65535"/>
-          </property>
-          <property name="color-style" type="int" value="3"/>
-          <property name="last-image" type="string" value="/home/pedro/DotFiles/Config/xfce4/desktop/background.jpg"/>
-          <property name="image-style" type="int" value="5"/>
-        </property>
-      </property>
-      <property name="monitorHDMI-0" type="empty">
-        <property name="workspace0" type="empty">
-          <property name="color1" type="array">
-            <value type="uint" value="32729"/>
-            <value type="uint" value="0"/>
-            <value type="uint" value="4"/>
-            <value type="uint" value="65535"/>
-          </property>
-          <property name="last-image" type="string" value="/home/pedro/.config/xfce4/desktop/background.jpg"/>
           <property name="color-style" type="int" value="0"/>
           <property name="image-style" type="int" value="5"/>
-        </property>
-      </property>
-      <property name="monitoreDP1" type="empty">
-        <property name="workspace0" type="empty">
-          <property name="color1" type="array">
-            <value type="uint" value="32616"/>
-            <value type="uint" value="0"/>
-            <value type="uint" value="4"/>
-            <value type="uint" value="65535"/>
-          </property>
-          <property name="last-image" type="string" value="/home/pedro/DotFiles/XFCE/backgrounds/1.jpg"/>
-          <property name="image-style" type="int" value="5"/>
-          <property name="backdrop-cycle-enable" type="bool" value="true"/>
-          <property name="backdrop-cycle-timer" type="uint" value="30"/>
-          <property name="backdrop-cycle-random-order" type="bool" value="true"/>
-          <property name="color-style" type="int" value="2"/>
-          <property name="color2" type="array">
-            <value type="uint" value="0"/>
-            <value type="uint" value="0"/>
-            <value type="uint" value="0"/>
-            <value type="uint" value="65535"/>
-          </property>
-          <property name="backdrop-cycle-period" type="int" value="0"/>
-        </property>
-      </property>
-      <property name="monitorHDMI1" type="empty">
-        <property name="workspace0" type="empty">
-          <property name="color1" type="array">
-            <value type="uint" value="32589"/>
-            <value type="uint" value="0"/>
-            <value type="uint" value="4"/>
-            <value type="uint" value="65535"/>
-          </property>
-          <property name="last-image" type="string" value="/home/pedro/DotFiles/XFCE/backgrounds/3.png"/>
-          <property name="image-style" type="int" value="5"/>
-          <property name="backdrop-cycle-enable" type="bool" value="true"/>
-          <property name="backdrop-cycle-random-order" type="bool" value="true"/>
-          <property name="color-style" type="int" value="2"/>
-          <property name="color2" type="array">
-            <value type="uint" value="0"/>
-            <value type="uint" value="0"/>
-            <value type="uint" value="0"/>
-            <value type="uint" value="65535"/>
-          </property>
-          <property name="backdrop-cycle-period" type="int" value="0"/>
-          <property name="backdrop-cycle-timer" type="uint" value="30"/>
+          <property name="last-image" type="string" value="/usr/share/xfce4/backdrops/xubuntu-wily.png"/>
         </property>
       </property>
     </property>
-    <property name="single-workspace-mode" type="bool" value="true"/>
-    <property name="single-workspace-number" type="int" value="0"/>
   </property>
   <property name="last" type="empty">
-    <property name="window-width" type="int" value="741"/>
-    <property name="window-height" type="int" value="476"/>
+    <property name="window-width" type="int" value="739"/>
+    <property name="window-height" type="int" value="526"/>
+  </property>
+  <property name="desktop-menu" type="empty">
+    <property name="show" type="bool" value="false"/>
+  </property>
+  <property name="windowlist-menu" type="empty">
+    <property name="show" type="bool" value="false"/>
   </property>
 </channel>

@@ -10,6 +10,7 @@ alias tmux='tmux -2'
 alias nyan='phpspec --format=nyan'
 alias git="hub"
 alias g='git'
+alias gt='git'
 alias gs='git status'
 alias gb='git branch'
 alias gc='git commit'
@@ -40,4 +41,4 @@ alias contde='sf debug:container'
 # DOCKER
 
 alias docker-top="docker run -ti -v /var/run/docker.sock:/var/run/docker.sock quay.io/vektorlab/ctop:latest"
-alias docker-purge='docker stop $(docker ps -q -a) && docker rm -vf $(docker ps -q -a) && docker rmi -f $(docker images -q) && docker network rm $(docker network ls -q)'
+alias docker-purge='docker container prune -f && docker volume prune -f && docker image prune -f && docker network prune -f'

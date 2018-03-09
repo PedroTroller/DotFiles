@@ -1,7 +1,7 @@
 {
   "ui" : {
     "global" : {
-      "ui-type" : "essential",
+      "ui-type" : "virgilio",
       "show-indicator" : false
     }
   },

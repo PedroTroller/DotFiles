@@ -95,8 +95,11 @@ au BufNewFile,BufRead *.twig set syntax=htmljinja
 au BufNewFile,BufRead *.jsonld set ft=json
 au BufNewFile,BufRead *.yml.dist set ft=yaml
 au BufNewFile,BufRead *.toml set ft=yaml
-au BufNewFile,BufRead *.ts set ft=javascript
+au BufNewFile,BufRead *.ts set ft=typescript
 au BufNewFile,BufRead .env.dist set ft=sh
+au BufNewFile,BufRead *.xml.twig set ft=xml
+au BufNewFile,BufRead *.vue set ft=html
+au BufNewFile,BufRead .php_cs* set ft=php
 
 " Syntastic
 let g:syntastic_enable_signs = 1
@@ -285,7 +288,7 @@ let g:ctrlp_cmd = 'CtrlPMRU'
 let g:ctrlp_match_window_bottom = 0
 
 " PHPCS
-let &colorcolumn = join(range(80,120),",")
+let &colorcolumn = join(range(81,121),",")
 
 autocmd BufWrite * :call <SID>MkdirsIfNotExists(expand('<afile>:h'))
 
@@ -391,6 +394,7 @@ command! PD : ! play ~/.sample/PD.mp3
 command! Rythm : ! play ~/.sample/Rythm.mp3
 command! Blublut : ! play ~/.sample/Blublut.mp3
 command! Yaya : ! play ~/.sample/Yayaya.mp3
+command! Philippe : ! play ~/.sample/Philippe.mp3
 
 map <Leader>lp :Oui<CR>
 map <Leader>jr :Jregrette<CR>
@@ -406,6 +410,7 @@ map <Leader>pd :PD<CR>
 map <Leader>mz :Rythm<CR>
 map <Leader>bl :Blublut<CR>
 map <Leader>ya :Yaya<CR>
+map <Leader>ph :Philippe<CR>
 
 let g:php_search_doc_command='xdg-open'
 

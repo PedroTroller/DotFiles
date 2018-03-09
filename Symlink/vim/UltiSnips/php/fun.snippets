@@ -5,6 +5,27 @@ ${1:public} function ${2}($3)
 }
 endsnippet
 
+snippet pub "method"
+public function ${1}($2)
+{
+    $3
+}
+endsnippet
+
+snippet pri "method"
+private function ${1}($2)
+{
+    $3
+}
+endsnippet
+
+snippet pro "method"
+protected function ${1}($2)
+{
+    $3
+}
+endsnippet
+
 snippet ifun "method"
 ${1:public} function ${2}($3);
 endsnippet
@@ -19,7 +40,7 @@ endsnippet
 snippet let "let"
 function let($1)
 {
-    $2
+	$this->beConstructedWith($2);
 }
 endsnippet
 

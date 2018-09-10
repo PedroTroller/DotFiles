@@ -42,3 +42,7 @@ alias contde='sf debug:container'
 
 alias docker-top="docker run -ti -v /var/run/docker.sock:/var/run/docker.sock quay.io/vektorlab/ctop:latest"
 alias docker-purge='docker container prune -f && docker volume prune -f && docker image prune -f && docker network prune -f'
+
+# TOOLS
+
+alias hadolint="docker run --rm -i hadolint/hadolint < "

@@ -6,6 +6,7 @@
     ui = true
 [user]
     email = plazanet.pierre@gmail.com
+	name = Pierre PLAZANET
 [push]
 	default = current
 [pull]

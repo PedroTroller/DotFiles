@@ -2,9 +2,9 @@
 Encoding=UTF-8
 Version=0.9.4
 Type=Application
-Name=BTSync
+Name=Résilio
 Comment=
-Exec=/home/pedro/Tools/btsync
+Exec=/home/pedro/Tools/rslsync
 OnlyShowIn=XFCE;
 StartupNotify=false
 Terminal=false

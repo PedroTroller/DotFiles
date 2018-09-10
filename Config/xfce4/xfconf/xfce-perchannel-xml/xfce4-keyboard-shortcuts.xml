@@ -11,6 +11,7 @@
         <property name="startup-notify" type="empty"/>
       </property>
       <property name="&lt;Primary&gt;&lt;Alt&gt;Delete" type="empty"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;l" type="empty"/>
       <property name="XF86Display" type="empty"/>
       <property name="&lt;Super&gt;p" type="empty"/>
       <property name="&lt;Primary&gt;Escape" type="empty"/>
@@ -59,6 +60,8 @@
       <property name="override" type="bool" value="true"/>
       <property name="&lt;Super&gt;Escape" type="string" value="xfce4-session-logout"/>
       <property name="&lt;Super&gt;l" type="string" value="/home/pedro/DotFiles/Tools/lock"/>
+      <property name="&lt;Primary&gt;&lt;Shift&gt;plus" type="string" value="xbacklight -inc 20"/>
+      <property name="&lt;Primary&gt;&lt;Shift&gt;degree" type="string" value="xbacklight -dec 20"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
@@ -115,9 +118,9 @@
       <property name="&lt;Primary&gt;F10" type="empty"/>
       <property name="&lt;Primary&gt;F11" type="empty"/>
       <property name="&lt;Primary&gt;F12" type="empty"/>
+      <property name="&lt;Alt&gt;F5" type="empty"/>
       <property name="&lt;Control&gt;&lt;Alt&gt;Down" type="empty"/>
       <property name="&lt;Control&gt;&lt;Alt&gt;Left" type="empty"/>
-      <property name="&lt;Alt&gt;F5" type="empty"/>
       <property name="&lt;Control&gt;&lt;Shift&gt;&lt;Alt&gt;Left" type="empty"/>
       <property name="&lt;Alt&gt;&lt;Control&gt;End" type="empty"/>
       <property name="&lt;Alt&gt;&lt;Control&gt;Home" type="empty"/>

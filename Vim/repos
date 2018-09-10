@@ -14,7 +14,7 @@ git@github.com:kien/ctrlp.vim.git
 git@github.com:leafgarland/typescript-vim.git
 git@github.com:majutsushi/tagbar.git
 git@github.com:posva/vim-vue.git
-git@github.com:shawncplus/phpcomplete.vim.git
+git@github.com:lvht/phpcd.vim.git
 git@github.com:sjbach/lusty.git
 git@github.com:stephpy/vim-yaml.git
 git@github.com:tpope/vim-dispatch.git

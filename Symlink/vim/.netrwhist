@@ -1,11 +1,3 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/home/pedro/Works/KNPLabs/deliver-events/.circleci'
-let g:netrw_dirhist_2='/home/pedro/Works/KNPLabs/deliver-events/apps/api/src/Application/Controller/ActionController'
-let g:netrw_dirhist_3='/home/pedro/Works/KNPLabs/deliver-events/apps/api/src/Application/Controller/ActionController/Action'
-let g:netrw_dirhist_4='/home/pedro/Works/KNPLabs/deliver-events/apps/api/src/Application/Controller/ActionController'
-let g:netrw_dirhist_5='/home/pedro/Works/KNPLabs/deliver-events/apps/api/src/Application/Controller'
-let g:netrw_dirhist_6='/home/pedro/Works/KNPLabs/deliver-events/apps/api/src/Application/Controller/ActionController'
-let g:netrw_dirhist_7='/home/pedro/Works/KNPLabs/deliver-events/apps/api/src/Application/Controller'
-let g:netrw_dirhist_8='/home/pedro/Works/KNPLabs/deliver-events/apps/api/src/Domain/Assets'
-let g:netrw_dirhist_9='/home/pedro/Works/KNPLabs/deliver-events/apps/api/src/Domain/Matchmacking/Computer'
+let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_1='/home/pedro/Works/Miscellaneous/mamandine/node_modules/bootstrap/scss'

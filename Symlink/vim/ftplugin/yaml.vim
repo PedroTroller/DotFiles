@@ -28,4 +28,6 @@ function! GetYamlIndent()
     endif
 endfunction
 
+let g:ale_linters = { 'yaml': ['yamllint'] }
+
 " vim:set sw=2:

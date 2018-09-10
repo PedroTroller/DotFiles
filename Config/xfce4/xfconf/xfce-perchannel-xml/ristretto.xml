@@ -7,6 +7,9 @@
     </property>
     <property name="height" type="uint" value="1048"/>
     <property name="width" type="uint" value="954"/>
+    <property name="thumbnails" type="empty">
+      <property name="show" type="bool" value="false"/>
+    </property>
   </property>
   <property name="desktop" type="empty">
     <property name="type" type="string" value="xfce"/>

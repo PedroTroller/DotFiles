@@ -53,7 +53,7 @@ foreach ($output as $file) {
         $lint_output = array();
         exec("php -l " . escapeshellarg($fileName), $lint_output, $return);
         if ($return == 0) {
-            exec("{$binary} fix {$fileName} --config-file=\"{$confFile}\"; git add {$fileName}");
+            exec("{$binary} fix {$fileName} --config=\"{$confFile}\"; git add {$fileName}");
         } else {
             echo implode("\n", $lint_output), "\n";
 

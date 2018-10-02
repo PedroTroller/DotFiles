@@ -2,17 +2,17 @@
 
 cd ~/Tools >> /dev/null
 
-sudo rm /usr/bin/btsync -f
+sudo rm /usr/bin/resilio -f
 
 if [ `getconf LONG_BIT` = "64" ]; then
-    wget https://download-cdn.getsyncapp.com/stable/linux-x64/BitTorrent-Sync_x64.tar.gz --output-document=btsync.tar.gz >> /dev/null
+    wget https://download-cdn.resilio.com/stable/linux-x64/resilio-sync_x64.tar.gz --output-document=resilio.tar.gz >> /dev/null
 else
-    wget https://download-cdn.getsyncapp.com/stable/linux-i386/BitTorrent-Sync_i386.tar.gz --output-document=btsync.tar.gz >> /dev/null
+    wget https://download-cdn.resilio.com/stable/linux-i386/resilio-sync_i386.tar.gz --output-document=resilio.tar.gz >> /dev/null
 fi
 
-tar -zxvf btsync.tar.gz >> /dev/null
-sudo ln -s Tools/btsync /usr/bin/btsync >> /dev/null
+tar -zxvf resilio.tar.gz >> /dev/null
+sudo ln -s Tools/rslsync /usr/bin/rslsync >> /dev/null
 
-rm btsync.tar.gz -f
+rm resilio.tar.gz -f
 
 cd - >> /dev/null

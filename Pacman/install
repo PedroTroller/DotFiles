@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+
+sudo pacman -Sy >> /dev/null
+
+for package in `cat ~/DotFiles/Pacman/packages`; do
+    echo INSTALL : $package
+    sudo pacman -Syu $package --noconfirm >> /dev/null
+done

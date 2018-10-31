@@ -1,7 +1,0 @@
-#!/usr/bin/env sh
-
-cd ~/Tools >> /dev/null
-
-wget http://selenium-release.storage.googleapis.com/2.45/selenium-server-standalone-2.45.0.jar --output-document=selenium.jar 
-
-cd - >> /dev/null

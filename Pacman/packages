@@ -1,0 +1,19 @@
+openssh
+curl
+php php-intl php-mongodb php-mysql php-sqlite php-imagick php-curl php-xdebug php-apc php-pear php-imap php-memcached php-xsl php-pear
+composer
+python
+vim meld
+python-pip
+git
+inotify-tools
+ruby teamocil
+ctags
+tmux
+gparted
+jre8-openjdk-headless
+xfce4-battery-plugin
+go
+synapse
+redshift
+docker docker-compose

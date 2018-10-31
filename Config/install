@@ -1,5 +1,7 @@
-#!/usr/bin
+#!/bin/bash
+
 mkdir ~/.config -p
+
 for file in `ls -1 ~/DotFiles/Config`; do 
     echo Config for $file
     rm -rf -f ~/.config/$file

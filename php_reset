@@ -1,4 +1,0 @@
-#!/bin/bash
-
-sudo apt-get purge php5-*
-sh ~/DotFiles/install

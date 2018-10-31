@@ -11,6 +11,7 @@ alias nyan='phpspec --format=nyan'
 alias git="hub"
 alias g='git'
 alias gt='git'
+alias gti='git'
 alias gs='git status'
 alias gb='git branch'
 alias gc='git commit'

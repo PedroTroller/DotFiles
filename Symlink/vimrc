@@ -396,6 +396,7 @@ command! Blublut : ! play ~/.sample/Blublut.mp3
 command! Yaya : ! play ~/.sample/Yayaya.mp3
 command! Philippe : ! play ~/.sample/Philippe.mp3
 command! Ah : ! play ~/.sample/Ah.mp3
+command! JeVaisTtuer : ! play ~/.sample/JeVaisTTuer.mp3
 
 map <Leader>lp :Oui<CR>
 map <Leader>jr :Jregrette<CR>
@@ -406,13 +407,14 @@ map <Leader>mm :MyMind<CR>
 map <Leader>go :Gogole<CR>
 map <Leader>gg :Gogole<CR>
 map <Leader>nn :Nein<CR>
-map <Leader>ya :Yeah<CR>
+map <Leader>ye :Yeah<CR>
 map <Leader>pd :PD<CR>
 map <Leader>mz :Rythm<CR>
 map <Leader>bl :Blublut<CR>
 map <Leader>ya :Yaya<CR>
 map <Leader>ph :Philippe<CR>
 map <Leader>ah :Ah<CR>
+map <Leader>jv :JeVaisTtuer<CR>
 
 let g:php_search_doc_command='xdg-open'
 

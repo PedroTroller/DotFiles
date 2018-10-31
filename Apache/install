@@ -1,6 +1,0 @@
-#!/bin/bash
-
-sudo ~/Tools/configure /etc/apache2/envvars "export APACHE_RUN_USER" pedro "=" >> /dev/null
-sudo ~/Tools/configure /etc/apache2/envvars "export APACHE_RUN_GROUP" pedro "=" >> /dev/null
-
-sudo service apache2 restart

@@ -1,4 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/home/pedro/Works/KNPLabs/KNPBundlesV3/apps/workers/src/DoctrineCache'
-let g:netrw_dirhist_2='/home/pedro/Works/KNPLabs/KNPBundlesV3/apps/workers/src'
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/pedro/Works/KNPLabs/deliver-events/apps/api/var/cache/dev/ContainerUh3j7pl'
+let g:netrw_dirhist_2='/home/pedro/Works/KNPLabs/deliver-events/apps/api/src/Domain'
+let g:netrw_dirhist_3='/home/pedro/Works/PedroTroller/image-muffin/fixtures/portrait/jpg'
+let g:netrw_dirhist_4='/home/pedro/DotFiles/Pacman'

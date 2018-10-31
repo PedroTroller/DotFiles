@@ -8,6 +8,7 @@
       <property name="length" type="uint" value="1"/>
       <property name="position-locked" type="bool" value="true"/>
       <property name="plugin-ids" type="array">
+        <value type="int" value="1"/>
         <value type="int" value="11"/>
         <value type="int" value="12"/>
         <value type="int" value="5"/>
@@ -61,8 +62,8 @@
         <value type="string" value="discord"/>
         <value type="string" value="do"/>
         <value type="string" value="synapse"/>
-        <value type="string" value="applet networkmanager"/>
         <value type="string" value="blueman-applet"/>
+        <value type="string" value="applet networkmanager"/>
         <value type="string" value="réseau"/>
         <value type="string" value="xfce4-power-manager"/>
         <value type="string" value="skypeforlinux"/>
@@ -71,6 +72,12 @@
         <value type="string" value="notes"/>
         <value type="string" value="javaembeddedframe"/>
       </property>
+    </property>
+    <property name="plugin-1" type="string" value="applicationsmenu">
+      <property name="show-menu-icons" type="bool" value="true"/>
+      <property name="show-button-title" type="bool" value="false"/>
+      <property name="show-tooltips" type="bool" value="false"/>
+      <property name="button-icon" type="string" value="/home/pedro/.face"/>
     </property>
   </property>
   <property name="configver" type="int" value="2"/>

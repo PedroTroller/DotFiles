@@ -1,7 +1,6 @@
 git@github.com:Lokaltog/vim-powerline.git
 git@github.com:Shougo/neocomplete.vim.git
 git@github.com:SirVer/ultisnips.git
-git@github.com:airblade/vim-gitgutter.git
 git@github.com:arnaud-lb/vim-php-namespace.git
 git@github.com:editorconfig/editorconfig-vim.git
 git@github.com:ekalinin/Dockerfile.vim.git
